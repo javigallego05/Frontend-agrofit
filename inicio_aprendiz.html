@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGROFIT</title>
+    <link rel="stylesheet" href="CSS/inicio_sesion.css">
+    <link rel="stylesheet" href="CSS/inicio_admin.css">
+    <link rel="stylesheet" href="CSS/inicio_aprendiz.css">
+
+</head>
+
+<body>
+    <!--barra superior-->
+    <header class="top-navbar">
+        <div class="nav-logo"> Agrofit <span class="badge">SENA</span></div>
+        <div class="nav-title">Sistema de Acondicionamiento Físico y Gimnasio</div>
+    </header>
+
+    <!--pestañas de inicio_principal-->
+    <div class="dashboard-layout">
+
+
+        <!--menu lateral de la izquierda-->
+        <aside class="sidebar">
+            <div class="user-card">
+                <img src="img/logo_sena 2.png" alt="SENA" class="logo-img">
+                <div class="user-info">
+                    <strong>Agrofit SENA</strong><br>
+                    <span>Portal Aprendiz</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="#" class="menu-item menu-item-active">
+                    <!-- Ícono Inicio -->
+                    Inicio
+                </a>
+                <a href="rutinas_aprendiz.html" class="menu-item">
+                    <!-- Ícono Mis Rutinas -->
+                    Mis Rutinas
+                </a>
+                <a href="progreso_aprendiz.html" class="menu-item">
+                    <!-- Ícono Progreso Físico -->
+                    Progreso Fisico
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="inicio_sesion.html" class="menu-item outline-btn">
+                    <!-- Ícono Cerrar Sesión -->
+                    Cerrar Sesión
+                </a>
+            </div>
+        </aside>
+
+        <!--contenido principal inicio aprendiz-->
+        <main class="main-content">
+            <header class="welcome-header">
+                <h1>¡Hola, Juan!</h1>
+                <p>Aquí tienes un resumen de tu progreso y lo que te espera hoy. Sigue así.</p>
+            </header>
+
+            <!--Contenedor Superior (Grilla de 2 columnas)-->
+            <div class="dashboard-grid">
+
+                <!--Tarjeta Izquierda: Mi Evolución-->
+                <div class="card card-green-border">
+                    <div class="card-header">
+                        <div class="header-title">
+                            <h2>Mi Evolución</h2>
+                        </div>
+                        <div class="header-actions">
+                            <button class="btn-text">+ Registrar</button>
+                            <a href="#" class="link-green">Ver detalles</a>
+                        </div>
+                    </div>
+
+                    <!-- Simulación de Gráfico -->
+                    <div class="chart-section">
+                        <div class="chart-top">
+                            <span class="chart-title">Tendencia últimos 5 meses (Peso & Grasa)</span>
+                            <div class="chart-toggles">
+                                <span class="toggle active">Peso (kg)</span>
+                                <span class="toggle">Grasa (%)</span>
+                            </div>
+                        </div>
+
+                        <div class="chart-visual">
+                            <!--SVG simulación de línea de gráfico-->
+                            <svg viewBox="0 0 500 100" preserveAspectRatio="none" style="width: 100%; height: 100px;">
+                                <polyline fill="none" stroke="#39a900" stroke-width="3"
+                                    points="0,20 150,30 300,45 450,55 500,60" />
+                                <circle cx="0" cy="20" r="4" fill="white" stroke="#39a900" stroke-width="2" />
+                                <circle cx="150" cy="30" r="4" fill="white" stroke="#39a900" stroke-width="2" />
+                                <circle cx="300" cy="45" r="4" fill="white" stroke="#39a900" stroke-width="2" />
+                                <circle cx="450" cy="55" r="4" fill="white" stroke="#39a900" stroke-width="2" />
+                                <circle cx="500" cy="60" r="4" fill="white" stroke="#39a900" stroke-width="2" />
+
+                                <!--Líneas guía horizontales (simuladas)-->
+                                <line x1="0" y1="0" x2="500" y2="0" stroke="#eee" stroke-dasharray="4" />
+                                <line x1="0" y1="25" x2="500" y2="25" stroke="#eee" stroke-dasharray="4" />
+                                <line x1="0" y1="50" x2="500" y2="50" stroke="#eee" stroke-dasharray="4" />
+                                <line x1="0" y1="75" x2="500" y2="75" stroke="#eee" stroke-dasharray="4" />
+                                <line x1="0" y1="100" x2="500" y2="100" stroke="#eee" stroke-dasharray="4" />
+                            </svg>
+                            <!--Etiquetas del eje X-->
+                            <div class="chart-x-axis">
+                                <span>28 de feb</span>
+                                <span>14 de abr</span>
+                                <span>31 de may</span>
+                                <span>14 de jul</span>
+                                <span>14 de ago</span>
+                            </div>
+                        </div>
+
+                        <div class="chart-bottom">
+                            <span class="text-gray">Meta: 70 kg & 15% Grasa</span>
+                            <span class="text-green-dark">Progreso: -4.5 kg desde Marzo</span>
+                        </div>
+                    </div>
+
+                    <!--KPIs-->
+                    <div class="kpi-container">
+                        <div class="kpi-box bg-light-green">
+                            <div class="kpi-data">
+                                <span class="kpi-label">Peso Actual</span>
+                                <strong class="kpi-value">72 <small>kg</small></strong>
+                            </div>
+                        </div>
+                        <div class="kpi-box bg-light-gray">
+                            <div class="kpi-data">
+                                <span class="kpi-label">Grasa Corp.</span>
+                                <strong class="kpi-value">18 <small>%</small></strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Tarjeta Derecha: Rutina-->
+                <div class="card card-green-border">
+                    <div class="card-header border-bottom">
+                        <div class="header-title">
+                            <h2>Rutina de Hoy</h2>
+                        </div>
+                        <span class="session-text">Sesión #4</span>
+                    </div>
+
+                    <div class="rutina-content">
+                        <span class="tag-rutina">Tren Superior</span>
+                        <h3 class="rutina-title">Fuerza Pectoral</h3>
+                        <p class="rutina-meta">45 mins • Intensidad Media</p>
+
+                        <ul class="task-list">
+                            <li class="pending">
+                                <span class="check-icon">✅</span>
+                                Press de banca plana (4x12)
+                            </li>
+                            <li class="pending">
+                                <span class="check-icon">✅</span>
+                                Aperturas con mancuernas (3x15)
+                            </li>
+                            <li class="pending">
+                                <span class="circle-icon"></span>
+                                Flexiones (3x al fallo)
+                            </li>
+                        </ul>
+
+                        <button class="btn-block-primary">Ver mi rutina completa →</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Contenedor Inferior: Evaluaciones-->
+            <div class="card card-gray-border mt-20">
+                <div class="card-header border-bottom">
+                    <div class="header-title">
+                        <h2>Evaluaciones Pendientes</h2>
+                    </div>
+                    <span class="session-text">2 evaluaciones activas</span>
+                </div>
+
+                <div class="evaluaciones-list">
+                    <!--Item 1-->
+                    <div class="eval-item">
+                        <div class="eval-info-group">
+                            <div class="eval-texts">
+                                <strong>Medición Antropométrica Mensual</strong>
+                                <span class="text-red">Vence mañana</span>
+                            </div>
+                        </div>
+                        <button class="btn-outline">Agendar</button>
+                    </div>
+
+                    <!--Item 2-->
+                    <div class="eval-item">
+                        <div class="eval-info-group">
+                            <div class="eval-texts">
+                                <strong>Encuesta de Satisfacción Rutina</strong>
+                                <span class="text-gray">Disponible hasta el viernes</span>
+                            </div>
+                        </div>
+                        <button class="btn-outline">Completar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!--barra de abajo pie de paguina-->
+    <header class="top-navbars">
+        <div class="nav-pie-paguina">© 2026 Servicio Nacional de Aprendizaje SENA— Agrofit</div>
+    </header>
+</body>
+
+</html>

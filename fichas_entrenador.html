@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGROFIT</title>
+    <link rel="stylesheet" href="CSS/inicio_sesion.css">
+    <link rel="stylesheet" href="CSS/inicio_admin.css">
+    <link rel="stylesheet" href="CSS/fichas_entrtenador.css">
+
+</head>
+
+<body>
+    <!--barra superior-->
+    <header class="top-navbar">
+        <div class="nav-logo"> Agrofit <span class="badge">SENA</span></div>
+        <div class="nav-title">Sistema de Acondicionamiento Físico y Gimnasio</div>
+    </header>
+
+    <!--pestañas de inicio_principal-->
+    <div class="dashboard-layout">
+
+
+        <!--menu lateral de la izquierda-->
+        <aside class="sidebar">
+            <div class="user-card">
+                <img src="img/logo_sena 2.png" alt="SENA" class="logo-img">
+                <div class="user-info">
+                    <strong>Agrofit SENA</strong><br>
+                    <span>Portal Entrenador</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="inicio_entrenador.html" class="menu-item">
+                    <!-- Ícono Inicio -->
+                    Inicio
+                </a>
+                <a href="rutinas_entrenador.html" class="menu-item">
+                    <!-- Ícono Mis Rutinas -->
+                    Asignar Rutinas
+                </a>
+                <a href="" class="menu-item menu-item-active">
+                    <!-- Ícono Progreso Físico -->
+                    Fichas
+                </a>
+                <a href="inventario_entrenador.html" class="menu-item">
+                    <!-- Ícono Progreso Físico -->
+                    Inventario de Máquinas
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="inicio_sesion.html" class="menu-item outline-btn">
+                    <!-- Ícono Cerrar Sesión -->
+                    Cerrar Sesión
+                </a>
+            </div>
+        </aside>
+
+        <!--contenido principal fichas entrenador-->
+
+        <main class="main-content">
+
+            <!--encabezado de la página-->
+            <div class="page-header">
+                <div class="header-text">
+                    <h1>Fichas de Formación y Horarios de Gimnasio</h1>
+                    <p>Asignación de franjas horarias de acondicionamiento físico por programa del SENA.</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-primary">Asignar Nueva Ficha</button>
+                </div>
+            </div>
+
+            <!--barra de búsqueda y filtros-->
+            <div class="filter-bar">
+                <div class="search-input-container">
+                    <input type="text" placeholder="Buscar por número de ficha o programa..." class="search-input">
+                </div>
+                <select class="select-jornada">
+                    <option>Todas las Jornadas</option>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </div>
+
+            <!--grid de fichas-->
+            <div class="fichas-grid">
+
+                <!--ficha 1-->
+                <div class="ficha-card">
+                    <div class="ficha-header">
+                        <span class="tag-ficha">Ficha #2694520</span>
+                        <span class="tag-jornada">Mañana</span>
+                    </div>
+                    <div class="ficha-title">
+                        <h3>ADSO - Análisis y Desarrollo de Software</h3>
+                        <p class="sede-text">Centro Agropecuario - Popayán</p>
+                    </div>
+                    <div class="ficha-info-box">
+                        <div class="info-row">
+                            <span class="info-label text-green">Horario Gimnasio:</span>
+                            <strong class="info-value">Mar y Jue 08:00 - 10:00 AM</strong>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Instructor:</span>
+                            <span class="info-value">Carlos Andrés Gómez</span>
+                        </div>
+                    </div>
+                    <div class="ficha-progress">
+                        <div class="progress-labels">
+                            <span>Aprendices Activos en Gimnasio</span>
+                            <span class="progress-stats">28 / 32 <strong class="text-green">(88%)</strong></span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" style="width: 88%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--ficha 2-->
+                <div class="ficha-card">
+                    <div class="ficha-header">
+                        <span class="tag-ficha">Ficha #2718930</span>
+                        <span class="tag-jornada">Tarde</span>
+                    </div>
+                    <div class="ficha-title">
+                        <h3>Tecnología en Gestión de Recursos Naturales</h3>
+                        <p class="sede-text">CA - Popayán</p>
+                    </div>
+                    <div class="ficha-info-box">
+                        <div class="info-row">
+                            <span class="info-label text-green">Horario Gimnasio:</span>
+                            <strong class="info-value">Lun y Mié 14:00 - 16:00 PM</strong>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Instructor:</span>
+                            <span class="info-value">Laura Sánchez</span>
+                        </div>
+                    </div>
+                    <div class="ficha-progress">
+                        <div class="progress-labels">
+                            <span>Aprendices Activos en Gimnasio</span>
+                            <span class="progress-stats">24 / 28 <strong class="text-green">(86%)</strong></span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" style="width: 86%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--ficha 3-->
+                <div class="ficha-card">
+                    <div class="ficha-header">
+                        <span class="tag-ficha">Ficha #2839102</span>
+                        <span class="tag-jornada">Mañana</span>
+                    </div>
+                    <div class="ficha-title">
+                        <h3>Producción de Especies Menores</h3>
+                        <p class="sede-text">CA - Popayán</p>
+                    </div>
+                    <div class="ficha-info-box">
+                        <div class="info-row">
+                            <span class="info-label text-green">Horario Gimnasio:</span>
+                            <strong class="info-value">Mié y Vie 06:30 - 08:30 AM</strong>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Instructor:</span>
+                            <span class="info-value">Carlos Andrés Gómez</span>
+                        </div>
+                    </div>
+                    <div class="ficha-progress">
+                        <div class="progress-labels">
+                            <span>Aprendices Activos en Gimnasio</span>
+                            <span class="progress-stats">22 / 25 <strong class="text-green">(88%)</strong></span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" style="width: 88%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--ficha 4-->
+                <div class="ficha-card">
+                    <div class="ficha-header">
+                        <span class="tag-ficha">Ficha #2550192</span>
+                        <span class="tag-jornada">Noche</span>
+                    </div>
+                    <div class="ficha-title">
+                        <h3>Mantenimiento Mecatrónico de Automotores</h3>
+                        <p class="sede-text">CA - Popayán</p>
+                    </div>
+                    <div class="ficha-info-box">
+                        <div class="info-row">
+                            <span class="info-label text-green">Horario Gimnasio:</span>
+                            <strong class="info-value">Lun y Vie 18:30 - 20:30 PM</strong>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Instructor:</span>
+                            <span class="info-value">Roberto Cárdenas</span>
+                        </div>
+                    </div>
+                    <div class="ficha-progress">
+                        <div class="progress-labels">
+                            <span>Aprendices Activos en Gimnasio</span>
+                            <span class="progress-stats">19 / 30 <strong class="text-green">(63%)</strong></span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" style="width: 63%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!--barra de abajo pie de paguina-->
+    <header class="top-navbars">
+        <div class="nav-pie-paguina">© 2026 Servicio Nacional de Aprendizaje SENA— Agrofit</div>
+    </header>
+</body>
+
+</html>

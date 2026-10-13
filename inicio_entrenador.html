@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGROFIT</title>
+    <link rel="stylesheet" href="CSS/inicio_sesion.css">
+    <link rel="stylesheet" href="CSS/inicio_admin.css">
+    <link rel="stylesheet" href="CSS/inicio_entrenador.css">
+
+</head>
+
+<body>
+    <!--barra superior-->
+    <header class="top-navbar">
+        <div class="nav-logo"> Agrofit <span class="badge">SENA</span></div>
+        <div class="nav-title">Sistema de Acondicionamiento Físico y Gimnasio</div>
+    </header>
+
+    <!--pestañas de inicio_principal-->
+    <div class="dashboard-layout">
+
+
+        <!--menu lateral de la izquierda-->
+        <aside class="sidebar">
+            <div class="user-card">
+                <img src="img/logo_sena 2.png" alt="SENA" class="logo-img">
+                <div class="user-info">
+                    <strong>Agrofit SENA</strong><br>
+                    <span>Portal Entrenador</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="#" class="menu-item menu-item-active">
+                    <!-- Ícono Inicio -->
+                    Inicio
+                </a>
+                <a href="rutinas_entrenador.html" class="menu-item">
+                    <!-- Ícono Mis Rutinas -->
+                    Asignar Rutinas
+                </a>
+                <a href="fichas_entrenador.html" class="menu-item">
+                    <!-- Ícono Progreso Físico -->
+                    Fichas
+                </a>
+                <a href="inventario_entrenador.html" class="menu-item">
+                    <!-- Ícono Progreso Físico -->
+                    Inventario de Máquinas
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="inicio_sesion.html" class="menu-item outline-btn">
+                    <!-- Ícono Cerrar Sesión -->
+                    Cerrar Sesión
+                </a>
+            </div>
+        </aside>
+
+        <!--contnido principal de inicio entrenador-->
+
+        <main class="main-content">
+            
+            <!--banner de bienvenida-->
+            <div class="welcome-banner">
+                <div class="banner-content">
+                    <h1>¡Bienvenido, Entrenador Carlos!</h1>
+                    <p>Aquí puedes asignar y personalizar rutinas a los aprendices y monitorear la cantidad de
+                        aprendices activosen la plataforma.</p>
+                </div>
+                <div class="banner-actions">
+                    <button class="btn-secondary">Banco de Rutinas (4)</button>
+                    <button class="btn-primary">Nueva Medición</button>
+                </div>
+            </div>
+
+            <!--tarjetas de indicadores KPI-->
+            <div class="kpi-grid">
+
+                <!--KPI 1-->
+                <div class="kpi-card">
+                    <div class="kpi-header">
+                        <span class="kpi-title">APRENDICES ACTIVOS</span>
+                    </div>
+                    <div class="kpi-body">
+                        <span class="kpi-value">7</span> <span class="kpi-subtitle">en plataforma</span>
+                    </div>
+                </div>
+
+                <!--KPI 2-->
+                <div class="kpi-card">
+                    <div class="kpi-header">
+                        <span class="kpi-title">RUTINAS ASIGNADAS</span>
+                    </div>
+                    <div class="kpi-body">
+                        <span class="kpi-value">6</span> <span class="kpi-subtitle">/ 7</span>
+                    </div>
+                </div>
+
+                <!--KPI 3-->
+                <div class="kpi-card">
+                    <div class="kpi-header">
+                        <span class="kpi-title">FICHAS EN FORMACIÓN</span>
+                    </div>
+                    <div class="kpi-body">
+                        <span class="kpi-value">4</span> <span class="kpi-subtitle">fichas activas</span>
+                    </div>
+                </div>
+
+                <!--KPI 4-->
+                <div class="kpi-card">
+                    <div class="kpi-header">
+                        <span class="kpi-title">ASISTENCIAS TOTALES</span>
+                    </div>
+                    <div class="kpi-body">
+                        <span class="kpi-value">144</span> <span class="kpi-subtitle">sesiones
+                            completadas</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--sección de tabla de aprendices-->
+            <div class="table-section">
+                <div class="table-header">
+                    <div class="table-title">
+                        <h2>Aprendices Activos en Plataforma</h2>
+                        <p>Listado en tiempo real de aprendices con estado médico, rutina asignada y asistencias</p>
+                    </div>
+                    <div class="table-search">
+                        <input type="text" placeholder="Buscar por nombre, cédula o ficha..." class="search-input">
+                    </div>
+                </div>
+
+                <!--filtros-->
+                <div class="table-filters">
+                    <div class="filter-group">
+                        <label>FICHA:</label>
+                        <select>
+                            <option>Todas las Fichas</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>MÉDICO:</label>
+                        <select>
+                            <option>Todos los Estados</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>RUTINA:</label>
+                        <select>
+                            <option>Todas las asignaciones</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!--tabla-->
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>APRENDIZ</th>
+                            <th>FICHA & PROGRAMA</th>
+                            <th class="text-center">ESTADO MÉDICO</th>
+                            <th>RUTINA ASIGNADA</th>
+                            <th class="text-center">ASISTENCIAS</th>
+                            <th class="text-center">ACCIONES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--fila 1-->
+                        <tr>
+                            <td>
+                                <div class="user-info-table">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                    </svg>
+                                    <div class="user-details">
+                                        <strong>Juan Camilo Pérez</strong>
+                                        <span>CC: 1023948572</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="ficha-details">
+                                    <strong class="text-green">Ficha 2694520</strong>
+                                    <span>ADSO - Análisis y Desarrollo de Soft...</span>
+                                </div>
+                            </td>
+                            <td class="text-center"><span class="status-apto">Apto</span></td>
+                            <td><strong>Fuerza Pectoral</strong> <span class="time-tag">45m</span></td>
+                            <td class="text-center"><span class="asistencia-count">28</span></td>
+                            <td class="acciones-cell">
+                                <button class="btn-asignar">Asignar</button>
+                            </td>
+                        </tr>
+
+                        <!--fila 2-->
+                        <tr>
+                            <td>
+                                <div class="user-info-table">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                    </svg>
+                                    <div class="user-details">
+                                        <strong>Valentina Restrepo Ortiz</strong>
+                                        <span>CC: 1098234711</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="ficha-details">
+                                    <strong class="text-green">Ficha 2694520</strong>
+                                    <span>ADSO - Análisis y Desarrollo de Soft...</span>
+                                </div>
+                            </td>
+                            <td class="text-center"><span class="status-apto">Apto</span></td>
+                            <td><strong>Potencia de Pierna y Glúteo</strong> <span class="time-tag">50m</span></td>
+                            <td class="text-center"><span class="asistencia-count">24</span></td>
+                            <td class="acciones-cell">
+                                <button class="btn-asignar">Asignar</button>
+                            </td>
+                        </tr>
+
+                        <!--fila 3-->
+                        <tr>
+                            <td>
+                                <div class="user-info-table">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                    </svg>
+                                    <div class="user-details">
+                                        <strong>Mateo Morales Silva</strong>
+                                        <span>CC: 1033491823</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="ficha-details">
+                                    <strong class="text-green">Ficha 2718930</strong>
+                                    <span>Gestión de Recursos Naturales</span>
+                                </div>
+                            </td>
+                            <td class="text-center"><span class="status-pendiente">Pendiente</span></td>
+                            <td><strong>Acondicionamiento Funcional & Core HIIT</strong> <span
+                                    class="time-tag">35m</span></td>
+                            <td class="text-center"><span class="asistencia-count">12</span></td>
+                            <td class="acciones-cell">
+                                <button class="btn-asignar">Asignar</button>
+                            </td>
+                        </tr>
+
+                        <!--fila 4-->
+                        <tr>
+                            <td>
+                                <div class="user-info-table">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                    </svg>
+                                    <div class="user-details">
+                                        <strong>Camila Andrea Torres</strong>
+                                        <span>CC: 1019283746</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="ficha-details">
+                                    <strong class="text-green">Ficha 2694520</strong>
+                                    <span>ADSO - Análisis y Desarrollo de Soft...</span>
+                                </div>
+                            </td>
+                            <td class="text-center"><span class="status-apto">Apto</span></td>
+                            <td><strong>Tracción & Espalda - Bíceps</strong> <span class="time-tag">45m</span></td>
+                            <td class="text-center"><span class="asistencia-count">31</span></td>
+                            <td class="acciones-cell">
+                                <button class="btn-asignar">Asignar</button>
+                            </td>
+                        </tr>
+
+                        <!--fila 5-->
+                        <tr>
+                            <td>
+                                <div class="user-info-table">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                    </svg>
+                                    <div class="user-details">
+                                        <strong>Santiago Beltrán Rojas</strong>
+                                        <span>CC: 1024859201</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="ficha-details">
+                                    <strong class="text-green">Ficha 2839102</strong>
+                                    <span>Producción de Especies Menores</span>
+                                </div>
+                            </td>
+                            <td class="text-center"><span class="status-apto">Apto</span></td>
+                            <td><strong>Fuerza Pectoral</strong> <span class="time-tag">45m</span></td>
+                            <td class="text-center"><span class="asistencia-count">19</span></td>
+                            <td class="acciones-cell">
+                                <button class="btn-asignar">Asignar</button>
+                            </td>
+                        </tr>
+
+                        <!--fila 6-->
+                        <tr>
+                            <td>
+                                <div class="user-info-table">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                    </svg>
+                                    <div class="user-details">
+                                        <strong>Daniela Vargas Medina</strong>
+                                        <span>CC: 1072938401</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="ficha-details">
+                                    <strong class="text-green">Ficha 2550192</strong>
+                                    <span>Mantenimiento Mecatrónico de Aut...</span>
+                                </div>
+                            </td>
+                            <td class="text-center"><span class="status-pendiente">Pendiente</span></td>
+                            <td><span class="text-muted">Sin rutina</span></td>
+                            <td class="text-center"><span class="asistencia-count">8</span></td>
+                            <td class="acciones-cell">
+                                <button class="btn-asignar">Asignar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <!--barra de abajo pie de paguina-->
+    <header class="top-navbars">
+        <div class="nav-pie-paguina">© 2026 Servicio Nacional de Aprendizaje SENA— Agrofit</div>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGROFIT</title>
+    <link rel="stylesheet" href="CSS/inicio_sesion.css">
+    <link rel="stylesheet" href="CSS/inicio_admin.css">
+    <link rel="stylesheet" href="CSS/rutinas_entrenador.css">
+
+</head>
+
+<body>
+    <!--barra superior-->
+    <header class="top-navbar">
+        <div class="nav-logo"> Agrofit <span class="badge">SENA</span></div>
+        <div class="nav-title">Sistema de Acondicionamiento Físico y Gimnasio</div>
+    </header>
+
+    <!--pestañas de inicio_principal-->
+    <div class="dashboard-layout">
+
+
+        <!--menu lateral de la izquierda-->
+        <aside class="sidebar">
+            <div class="user-card">
+                <img src="img/logo_sena 2.png" alt="SENA" class="logo-img">
+                <div class="user-info">
+                    <strong>Agrofit SENA</strong><br>
+                    <span>Portal Entrenador</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="inicio_entrenador.html" class="menu-item ">
+                    <!-- Ícono Inicio -->
+                    Inicio
+                </a>
+                <a href="" class="menu-item menu-item-active">
+                    <!-- Ícono Mis Rutinas -->
+                    Asignar Rutinas
+                </a>
+                <a href="fichas_entrenador.html" class="menu-item">
+                    <!-- Ícono Progreso Físico -->
+                    Fichas
+                </a>
+                <a href="inventario_entrenador.html" class="menu-item">
+                    <!-- Ícono Progreso Físico -->
+                    Inventario de Máquinas
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="inicio_sesion.html" class="menu-item outline-btn">
+                    <!-- Ícono Cerrar Sesión -->
+                    Cerrar Sesión
+                </a>
+            </div>
+        </aside>
+
+        <!--contenido principal asignacion rutinas entrenador-->
+
+        <main class="main-content">
+            <div class="page-header">
+                <div class="header-text">
+                    <h1>Asignación de Rutinas a Aprendices</h1>
+                    <p>Prescribe y asigna planes de entrenamiento personalizados a aprendices individuales o por ficha
+                        formativa.</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-primary">Diseñar Nueva Rutina</button>
+                </div>
+            </div>
+
+            <!-- Panel de Asignación -->
+            <div class="assignment-panel">
+                <div class="panel-header">
+                    <div class="panel-title-group">
+                        <div>
+                            <h2>Panel de Asignación de Rutinas (Entrenador)</h2>
+                            <p>Selecciona el aprendiz o la ficha formativa y asigna el plan correspondiente</p>
+                        </div>
+                    </div>
+                    <div class="toggle-group">
+                        <button class="toggle-btn active">Por Aprendiz</button>
+                        <button class="toggle-btn">Por Ficha SENA</button>
+                    </div>
+                </div>
+
+                <div class="panel-form">
+                    <div class="form-group">
+                        <label>Seleccionar Aprendiz:</label>
+                        <select>
+                            <option>Juan Camilo Pérez (Ficha 2694520) - Apto</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Plan de Rutina a Asignar:</label>
+                        <select>
+                            <option>Fuerza Pectoral (Tren Superior - Media)</option>
+                        </select>
+                    </div>
+                    <div class="form-group flex-grow">
+                        <label>Recomendaciones / Frecuencia:</label>
+                        <input type="text" placeholder="Ej: 3 días a la semana, calentar 10 min...">
+                    </div>
+                </div>
+
+                <div class="panel-footer">
+                    <button class="btn-primary btn-large">Confirmar y Asignar Rutina</button>
+                </div>
+            </div>
+
+            <!-- Catálogo de Rutinas -->
+            <div class="catalog-section">
+                <div class="catalog-header">
+                    <div class="catalog-title">
+                        <h2>📚 Catálogo Oficial de Rutinas Institucionales</h2>
+                        <p>Planes validados por los instructores de acondicionamiento físico</p>
+                    </div>
+                    <div class="catalog-filters">
+                        <button class="filter-pill active">Todas</button>
+                        <button class="filter-pill">Tren Superior</button>
+                        <button class="filter-pill">Tren Inferior</button>
+                        <button class="filter-pill">Cardio HIIT</button>
+                        <button class="filter-pill">Fuerza</button>
+                        <button class="filter-pill">Full Body</button>
+                    </div>
+                </div>
+
+                <div class="routine-grid">
+                    <!-- Tarjeta 1 (Activa) -->
+                    <div class="routine-card active-card">
+                        <div class="card-header">
+                            <span class="tag-outline green-tag">Tren Superior</span>
+                            <span class="time-text">45 min</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Fuerza Pectoral</h3>
+                            <p>Enfoque en desarrollo de potencia, fuerza pectoral y estabilización de cintura escapular.
+                            </p>
+                        </div>
+                        <div class="card-stats">
+                            <div class="stat-row">
+                                <span>Nivel de Intensidad:</span>
+                                <strong class="text-orange">Media</strong>
+                            </div>
+                            <div class="stat-row">
+                                <span>Ejercicios incluidos:</span>
+                                <strong>4</strong>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn-primary flex-fill">Ver Detalle</button>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 2 -->
+                    <div class="routine-card">
+                        <div class="card-header">
+                            <span class="tag-outline green-tag">Tren Inferior</span>
+                            <span class="time-text">50 min</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Potencia de Pierna y Glúteo</h3>
+                            <p>Trabajo integral de cuádriceps, isquiotibiales y pantorrillas.</p>
+                        </div>
+                        <div class="card-stats">
+                            <div class="stat-row">
+                                <span>Nivel de Intensidad:</span>
+                                <strong class="text-red">Alta</strong>
+                            </div>
+                            <div class="stat-row">
+                                <span>Ejercicios incluidos:</span>
+                                <strong>4</strong>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn-primary flex-fill">▶ Ver Detalle</button>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 3 -->
+                    <div class="routine-card">
+                        <div class="card-header">
+                            <span class="tag-outline green-tag">Tren Superior</span>
+                            <span class="time-text">45 min</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Tracción & Espalda - Bíceps</h3>
+                            <p>Enfoque en dorsales, trapecio, romboides y flexores de codo.</p>
+                        </div>
+                        <div class="card-stats">
+                            <div class="stat-row">
+                                <span>Nivel de Intensidad:</span>
+                                <strong class="text-orange">Media</strong>
+                            </div>
+                            <div class="stat-row">
+                                <span>Ejercicios incluidos:</span>
+                                <strong>4</strong>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn-primary flex-fill">▶ Ver Detalle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!--barra de abajo pie de paguina-->
+    <header class="top-navbars">
+        <div class="nav-pie-paguina">© 2026 Servicio Nacional de Aprendizaje SENA— Agrofit</div>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGROFIT</title>
+    <link rel="stylesheet" href="CSS/inicio_sesion.css">
+    <link rel="stylesheet" href="CSS/inicio_admin.css">
+    <link rel="stylesheet" href="CSS/otra_funcion_funcionario.css">
+</head>
+
+<body>
+    <!--barra superior-->
+    <header class="top-navbar">
+        <div class="nav-logo"> Agrofit <span class="badge">SENA</span></div>
+        <div class="nav-title">Sistema de Acondicionamiento Físico y Gimnasio</div>
+    </header>
+
+    <!--pestañas de inicio_principal-->
+    <div class="dashboard-layout">
+
+
+        <!--menu lateral de la izquierda-->
+        <aside class="sidebar">
+            <div class="user-card">
+                <img src="img/logo_sena 2.png" alt="SENA" class="logo-img">
+                <div class="user-info">
+                    <strong>Agrofit SENA</strong><br>
+                    <span>Portal Funcionario</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="inicio_funcionario.html" class="menu-item">
+                    <!-- Ícono Inicio -->
+                    Inicio
+                </a>
+                <a href="rutinas_funcionario.html" class="menu-item">
+                    <!-- Ícono Mis Rutinas -->
+                    Mis Rutinas
+                </a>
+                <a href="progreso_funcionario.html" class="menu-item">
+                    <!-- Ícono Progreso Físico -->
+                    Progreso Fisico
+                </a>
+                <a href="" class="menu-item menu-item-active">
+                    <!-- Ícono Progreso Físico -->
+                    Otra Funcion
+                </a>
+            </nav>
+            <div class="sidebar-bottom">
+                <a href="inicio_sesion.html" class="menu-item outline-btn">
+                    <!-- Ícono Cerrar Sesión -->
+                    Cerrar Sesión
+                </a>
+            </div>
+        </aside>
+
+        <!--contenido principal inicio funcionario-->
+
+        <main class="main-content">
+            <!-- Encabezado del Módulo Operativo -->
+            <div class="op-header">
+                <div class="header-titles">
+                    <h1>Módulo Operativo: Aseo y Vigilancia del Gimnasio</h1>
+                    <p>Gestiona los protocolos de desinfección e higiene o el control de aforo, acceso y seguridad del Gimnasio.</p>
+                </div>
+                <button class="btn-solid-green">+ Registrar Novedad / Minuta</button>
+            </div>
+
+            <!-- Pestañas de Función -->
+            <div class="role-tabs">
+                <button class="tab-btn active">
+                    <span>Función de Aseo & Desinfección</span>
+                    <span class="badge-active">ACTIVO</span>
+                </button>
+                <button class="tab-btn">
+                    <span>Función de Vigilancia & Seguridad</span>
+                </button>
+            </div>
+
+            <!-- Banner de Progreso de Turno -->
+            <div class="progress-banner">
+                <div class="pb-info">
+                    <div class="pb-text">
+                        <div class="pb-title">
+                            <strong>Protocolo de Desinfección y Limpieza de Equipos</strong>
+                            <span class="badge-turn">Turno Mañana / Tarde</span>
+                        </div>
+                        <span class="pb-subtitle">Cumplimiento del día: <strong>2 de 5 zonas desinfectadas (40%)</strong></span>
+                    </div>
+                </div>
+                <div class="pb-bar-container">
+                    <div class="pb-labels">
+                        <span class="pb-label-text">Progreso de Turno</span>
+                        <span class="pb-label-percent">40%</span>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 40%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cuadrícula Principal (Checklist e Insumos) -->
+            <div class="op-grid">
+
+                <!-- Checklist Panel -->
+                <div class="panel checklist-panel">
+                    <div class="panel-header">
+                        <h3>Checklist de Áreas y Equipos del Gimnasio</h3>
+                        <span class="date-text">domingo, 30 de ago</span>
+                    </div>
+                    <div class="task-list">
+
+                        <!-- Tarea 1: Completada -->
+                        <div class="task-item">
+                            <div class="checkbox checked">✔</div>
+                            <div class="task-details">
+                                <div class="task-name">Zona de Cardio <span class="badge-orange">ALTA</span></div>
+                                <div class="task-desc">Caminadoras (01 a 04) y Elípticas</div>
+                            </div>
+                            <div class="task-timing">
+                                <span class="time-range">07:00 AM - 08:00 AM</span>
+                                <span class="time-done">✓ Realizado 07:45 AM</span>
+                            </div>
+                        </div>
+
+                        <!-- Tarea 2: Completada -->
+                        <div class="task-item">
+                            <div class="checkbox checked">✔</div>
+                            <div class="task-details">
+                                <div class="task-name">Zona de Peso Libre <span class="badge-orange">ALTA</span></div>
+                                <div class="task-desc">Mancuernas, Discos y Bancos Planos</div>
+                            </div>
+                            <div class="task-timing">
+                                <span class="time-range">09:00 AM - 10:00 AM</span>
+                                <span class="time-done">✓ Realizado 09:30 AM</span>
+                            </div>
+                        </div>
+
+                        <!-- Tarea 3: Pendiente -->
+                        <div class="task-item">
+                            <div class="checkbox empty"></div>
+                            <div class="task-details">
+                                <div class="task-name">Máquinas de Fuerza <span class="badge-orange">MEDIA</span></div>
+                                <div class="task-desc">Prensa, Poleas y Máquinas de Pecho</div>
+                            </div>
+                            <div class="task-timing">
+                                <span class="time-range">11:00 AM - 12:00 PM</span>
+                            </div>
+                        </div>
+
+                        <!-- Tarea 4: Pendiente -->
+                        <div class="task-item">
+                            <div class="checkbox empty"></div>
+                            <div class="task-details">
+                                <div class="task-name">Zona Funcional y Colchonetas <span
+                                        class="badge-orange">MEDIA</span></div>
+                                <div class="task-desc">Colchonetas, Balones y Cuerdas de Salto</div>
+                            </div>
+                            <div class="task-timing">
+                                <span class="time-range">01:30 PM - 02:30 PM</span>
+                            </div>
+                        </div>
+
+                        <!-- Tarea 5: Pendiente -->
+                        <div class="task-item">
+                            <div class="checkbox empty"></div>
+                            <div class="task-details">
+                                <div class="task-name">Vestidores & Lockers <span class="badge-orange">ALTA</span></div>
+                                <div class="task-desc">Desinfección de Casilleros e Hidratación</div>
+                            </div>
+                            <div class="task-timing">
+                                <span class="time-range">03:30 PM - 04:30 PM</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Insumos Panel -->
+                <div class="panel supplies-panel">
+                    <div class="panel-header">
+                        <h3>Insumos de Bioseguridad</h3>
+                        <button class="btn-small-outline">Stock Almacén</button>
+                    </div>
+                    <div class="supplies-list">
+
+                        <div class="supply-item">
+                            <div class="supply-info">
+                                <strong>Alcohol Antiséptico 70%</strong>
+                                <span>Disponible: 12 Galones</span>
+                            </div>
+                            <span class="status-badge green">Óptimo</span>
+                        </div>
+
+                        <div class="supply-item">
+                            <div class="supply-info">
+                                <strong>Desinfectante Multisuperficies</strong>
+                                <span>Disponible: 8 Galones</span>
+                            </div>
+                            <span class="status-badge green">Óptimo</span>
+                        </div>
+
+                        <div class="supply-item">
+                            <div class="supply-info">
+                                <strong>Rollos de Toallas Desechables</strong>
+                                <span>Disponible: 24 Unidades</span>
+                            </div>
+                            <span class="status-badge green">Óptimo</span>
+                        </div>
+
+                        <div class="supply-item">
+                            <div class="supply-info">
+                                <strong>Paños de Microfibra Especiales</strong>
+                                <span>Disponible: 15 Unidades</span>
+                            </div>
+                            <span class="status-badge orange">Regular</span>
+                        </div>
+
+                        <div class="supply-item">
+                            <div class="supply-info">
+                                <strong>Jabón Líquido Antibacterial</strong>
+                                <span>Disponible: 6 Litros</span>
+                            </div>
+                            <span class="status-badge green">Óptimo</span>
+                        </div>
+
+                    </div>
+                    <div class="panel-footer">
+                        <span class="footer-icon">✔</span> Protocolos bajo lineamiento de Seguridad y Salud en el
+                        Trabajo (SST) SENA.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Libro de Minutas Panel -->
+            <div class="panel logbook-panel">
+                <div class="panel-header">
+                    <h3>Libro de Minutas y Reporte de Novedades del Turno</h3>
+                    <button class="btn-text-green">+ Agregar Entrada</button>
+                </div>
+                <div class="log-entries">
+
+                    <!-- Entrada 1 -->
+                    <div class="log-entry">
+                        <div class="log-content">
+                            <div class="log-top">
+                                <span class="log-tag">VIGILANCIA / SEGURIDAD</span>
+                                <span class="log-time">09:15 AM</span>
+                                <strong>Termo de hidratación dejado en zona de mancuernas</strong>
+                            </div>
+                            <p class="log-desc">Se resguarda termo metálico azul en la recepción de seguridad.</p>
+                            <span class="log-author">Reportado por: <strong>Marta Lucía Gómez</strong></span>
+                        </div>
+                        <div class="log-status">
+                            <span class="status-outline">Registrado</span>
+                        </div>
+                    </div>
+
+                    <hr class="log-divider">
+
+                    <!-- Entrada 2 -->
+                    <div class="log-entry">
+                        <div class="log-content">
+                            <div class="log-top">
+                                <span class="log-tag">ASEO / HIGIENE</span>
+                                <span class="log-time">08:30 AM</span>
+                                <strong>Derrame de agua reportado y desinfectado</strong>
+                            </div>
+                            <p class="log-desc">Se aplicó secado y desinfección preventiva junto a caminadora #02.</p>
+                            <span class="log-author">Reportado por: <strong>Marta Lucía Gómez</strong></span>
+                        </div>
+                        <div class="log-status">
+                            <span class="status-outline">Atendido</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!--barra de abajo pie de paguina-->
+    <header class="top-navbars">
+        <div class="nav-pie-paguina">© 2026 Servicio Nacional de Aprendizaje SENA— Agrofit</div>
+    </header>
+</body>
+
+</html>

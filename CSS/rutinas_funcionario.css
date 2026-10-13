@@ -1,0 +1,363 @@
+/* =========================================
+   CONTENEDOR PRINCIPAL Y ENCABEZADO
+========================================= */
+.main-content {
+    padding: 20px 30px;
+    width: 100%;
+    background-color: #f2ffe8;
+    /* Fondo verde muy claro */
+    overflow-y: auto;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.page-header {
+    margin-bottom: 25px;
+}
+.page-header h1 {
+    margin: 0 0 5px 0;
+    font-size: 24px;
+    color: #1a1a1a;
+    font-weight: 900;
+}
+
+.page-header p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* =========================================
+   TARJETA PRINCIPAL DE RUTINA
+========================================= */
+.main-routine-card {
+    background: #ffffff;
+    border: 2px solid #39a900;
+    border-radius: 8px;
+    padding: 20px 25px;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.routine-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.routine-titles h2 {
+    margin: 0 0 8px 0;
+    font-size: 20px;
+    color: #1a1a1a;
+}
+
+.routine-titles p {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+    max-width: 600px;
+    line-height: 1.4;
+}
+
+.assigned-by {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    border-radius: 6px;
+    background: #fafafa;
+    gap: 12px;
+}
+
+.instructor-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.assigned-label {
+    font-size: 10px;
+    color: #888;
+    font-weight: bold;
+}
+
+.instructor-info strong {
+    font-size: 13px;
+    color: #333;
+}
+
+.instructor-role {
+    font-size: 11px;
+    color: #39a900;
+}
+
+/* Estadísticas (4 cajas) */
+.routine-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-box {
+    border: 1px solid #eee;
+    padding: 12px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.stat-label {
+    font-size: 10px;
+    color: #777;
+    font-weight: bold;
+}
+
+.stat-value {
+    font-size: 15px;
+}
+
+.text-green {
+    color: #39a900;
+}
+
+
+.text-red {
+    color: #d32f2f;
+}
+
+/* Desglose de Ejercicios */
+.breakdown-title {
+    font-size: 11px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.exercise-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.exercise-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 12px 15px;
+    gap: 12px;
+    background: #fff;
+}
+
+.exercise-item.completed {
+    background-color: #f4fcf5;
+    border-color: #92d050;
+}
+
+.checkbox-checked {
+    background: #39a900;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.checkbox-empty {
+    border: 2px solid #ccc;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+}
+
+.ex-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.ex-info strong {
+    font-size: 13px;
+    color: #333;
+}
+
+.ex-info strike {
+    color: #888;
+}
+
+.ex-info span {
+    font-size: 11px;
+    color: #666;
+}
+
+.ex-tag {
+    font-size: 10px;
+    background: #f0f0f0;
+    color: #555;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+
+.btn-start-routine {
+    background: #39a900;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 13px;
+    width: 100%;
+    text-align: left;
+    transition: background 0.2s;
+}
+
+.btn-start-routine:hover {
+    background: #2d8500;
+}
+
+/* =========================================
+   CATÁLOGO DE RUTINAS
+========================================= */
+.catalog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.catalog-title-area h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    color: #1a1a1a;
+}
+
+.catalog-title-area p {
+    margin: 0;
+    font-size: 13px;
+    color: #666;
+}
+
+.catalog-filters {
+    display: flex;
+    gap: 8px;
+}
+
+.filter-btn {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #555;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.filter-btn.active {
+    background: #39a900;
+    color: white;
+    border-color: #39a900;
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.catalog-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-card.highlight {
+    border: 2px solid #39a900;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.tag-outline-green {
+    border: 1px solid #39a900;
+    color: #39a900;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.duration {
+    font-size: 12px;
+    color: #777;
+}
+
+.catalog-card h4 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    color: #1a1a1a;
+}
+
+.catalog-card p {
+    margin: 0 0 15px 0;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.4;
+    flex-grow: 1;
+}
+
+.card-details {
+    background: #fafafa;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    margin-bottom: 4px;
+}
+
+.detail-row:last-child {
+    margin-bottom: 0;
+}
+
+.detail-row span {
+    color: #666;
+}
+
+.card-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-primary-full {
+    background: #39a900;
+    color: white;
+    border: none;
+    padding: 8px 0;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 12px;
+    flex-grow: 1;
+}

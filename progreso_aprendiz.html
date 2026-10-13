@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGROFIT</title>
+    <link rel="stylesheet" href="CSS/inicio_sesion.css">
+    <link rel="stylesheet" href="CSS/inicio_admin.css">
+    <link rel="stylesheet" href="CSS/progreso_aprendiz.css">
+
+
+</head>
+
+<body>
+    <!--barra superior-->
+    <header class="top-navbar">
+        <div class="nav-logo"> Agrofit <span class="badge">SENA</span></div>
+        <div class="nav-title">Sistema de Acondicionamiento Físico y Gimnasio</div>
+    </header>
+
+    <!--pestañas de inicio_principal-->
+    <div class="dashboard-layout">
+
+
+        <!--menu lateral de la izquierda-->
+        <aside class="sidebar">
+            <div class="user-card">
+                <img src="img/logo_sena 2.png" alt="SENA" class="logo-img">
+                <div class="user-info">
+                    <strong>Agrofit SENA</strong><br>
+                    <span>Portal Aprendiz</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="inicio_aprendiz.html" class="menu-item">
+                    <!-- Ícono Inicio -->
+                    Inicio
+                </a>
+                <a href="rutinas_aprendiz.html" class="menu-item">
+                    <!-- Ícono Mis Rutinas -->
+                    Mis Rutinas
+                </a>
+                <a href="#" class="menu-item menu-item-active">
+                    <!-- Ícono Progreso Físico -->
+                    Progreso Fisico
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="inicio_sesion.html" class="menu-item outline-btn">
+                    <!-- Ícono Cerrar Sesión -->
+                    Cerrar Sesión
+                </a>
+            </div>
+        </aside>
+
+        <!--contenido principal progreso aprendiz-->
+
+        <main class="main-content">
+            <div class="page-header progress-header">
+                <div class="header-titles">
+                    <h1>Mi Progreso y Control Físico</h1>
+                    <p>Histórico de composición corporal, índice de masa corporal (IMC) y medidas perimétricas.</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-informe">Descargar Informe PDF</button>
+                    <button class="btn-medicion">Nueva Medición</button>
+                </div>
+            </div>
+
+            <!--Tarjetas de Indicadores (KPIs)-->
+            <div class="kpi-grid">
+                <!-- Tarjeta 1: Peso -->
+                <div class="kpi-card">
+                    <div class="kpi-header">
+                        <span class="kpi-title">Peso Corporal</span>
+                        <span class="badge-green">-4.5 kg</span>
+                    </div>
+                    <div class="kpi-body">
+                        <span class="kpi-value">72</span> <span class="kpi-unit">kg</span>
+                    </div>
+                    <div class="kpi-footer">
+                        Inicio: 76.5 kg
+                    </div>
+                </div>
+
+                <!--Tarjeta 2: Grasa-->
+                <div class="kpi-card">
+                    <div class="kpi-header">
+                        <span class="kpi-title">% Grasa Corp.</span>
+                        <span class="badge-green">-4.4%</span>
+                    </div>
+                    <div class="kpi-body">
+                        <span class="kpi-value">18</span> <span class="kpi-unit">%</span>
+                    </div>
+                    <div class="kpi-footer">
+                        Inicio: 22.4%
+                    </div>
+                </div>
+
+                <!--Tarjeta 3: Músculo-->
+                <div class="kpi-card">
+                    <div class="kpi-header">
+                        <span class="kpi-title">% MASA MUSCULAR</span>
+                        <span class="badge-green">+2.8%</span>
+                    </div>
+                    <div class="kpi-body">
+                        <span class="kpi-value">34.6</span> <span class="kpi-unit">%</span>
+                    </div>
+                    <div class="kpi-footer">
+                        Inicio: 31.8%
+                    </div>
+                </div>
+
+                <!--Tarjeta 4: IMC-->
+                <div class="kpi-card">
+                    <div class="kpi-header">
+                        <span class="kpi-title">ÍNDICE IMC</span>
+                        <span class="badge-light-green">Normopeso</span>
+                    </div>
+                    <div class="kpi-body">
+                        <span class="kpi-value">22.7</span>
+                    </div>
+                    <div class="kpi-footer">
+                        Rango Óptimo: 18.5 - 24.9
+                    </div>
+                </div>
+            </div>
+
+            <!--Gráfica de Evolución-->
+            <div class="chart-section">
+                <div class="chart-header">
+                    <div class="chart-titles">
+                        <h2>Curva de Evolución Antropométrica</h2>
+                        <p>Seguimiento histórico de valoraciones periódicas registradas en el gimnasio</p>
+                    </div>
+                    <div class="chart-tabs">
+                        <button class="tab-btn active">Peso (kg)</button>
+                        <button class="tab-btn">% Grasa</button>
+                        <button class="tab-btn">% Músculo</button>
+                        <button class="tab-btn">Perímetros (cm)</button>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <!--Representación visual de la gráfica (Mockup SVG)-->
+                    <div class="y-axis">
+                        <span>80</span>
+                        <span>77</span>
+                        <span>73</span>
+                        <span>69</span>
+                        <span>65</span>
+                    </div>
+                    <div class="chart-area">
+                        <svg viewBox="0 0 800 200" preserveAspectRatio="none" class="chart-svg">
+                            <!--Líneas guía horizontales-->
+                            <line x1="0" y1="0" x2="800" y2="0" class="grid-line" />
+                            <line x1="0" y1="50" x2="800" y2="50" class="grid-line" />
+                            <line x1="0" y1="100" x2="800" y2="100" class="grid-line" />
+                            <line x1="0" y1="150" x2="800" y2="150" class="grid-line" />
+                            <line x1="0" y1="200" x2="800" y2="200" class="grid-line" />
+
+                            <!--Línea de datos-->
+                            <polyline points="0,55 200,80 400,105 600,135 800,155" fill="none" stroke="#39a900"
+                                stroke-width="3" />
+
+                            <!--Puntos-->
+                            <circle cx="0" cy="55" r="5" fill="#39a900" />
+                            <circle cx="200" cy="80" r="5" fill="#39a900" />
+                            <circle cx="400" cy="105" r="5" fill="#39a900" />
+                            <circle cx="600" cy="135" r="5" fill="#39a900" />
+                            <circle cx="800" cy="155" r="5" fill="#39a900" />
+                        </svg>
+                        <div class="x-axis">
+                            <span>28 de feb</span>
+                            <span>14 de abr</span>
+                            <span>31 de may</span>
+                            <span>14 de jul</span>
+                            <span>14 de ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart-legend">
+                    <span class="legend-item"><span class="legend-color"></span> Peso Corporal (kg)</span>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!--barra de abajo pie de paguina-->
+    <header class="top-navbars">
+        <div class="nav-pie-paguina">© 2026 Servicio Nacional de Aprendizaje SENA— Agrofit</div>
+    </header>
+</body>
+
+</html>

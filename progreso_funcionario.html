@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGROFIT</title>
+    <link rel="stylesheet" href="CSS/inicio_sesion.css">
+    <link rel="stylesheet" href="CSS/inicio_admin.css">
+    <link rel="stylesheet" href="CSS/progreso_funcionario.css">
+</head>
+
+<body>
+    <!--barra superior-->
+    <header class="top-navbar">
+        <div class="nav-logo"> Agrofit <span class="badge">SENA</span></div>
+        <div class="nav-title">Sistema de Acondicionamiento Físico y Gimnasio</div>
+    </header>
+
+    <!--pestañas de inicio_principal-->
+    <div class="dashboard-layout">
+
+
+        <!--menu lateral de la izquierda-->
+        <aside class="sidebar">
+            <div class="user-card">
+                <img src="img/logo_sena 2.png" alt="SENA" class="logo-img">
+                <div class="user-info">
+                    <strong>Agrofit SENA</strong><br>
+                    <span>Portal Funcionario</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="inicio_funcionario.html" class="menu-item">
+                    <!-- Ícono Inicio -->
+                    Inicio
+                </a>
+                <a href="rutinas_funcionario.html" class="menu-item">
+                    <!-- Ícono Mis Rutinas -->
+                    Mis Rutinas
+                </a>
+                <a href="" class="menu-item menu-item-active">
+                    <!-- Ícono Progreso Físico -->
+                    Progreso Fisico
+                </a>
+                <a href="otra_funcion_funcionario.html" class="menu-item">
+                    <!-- Ícono Progreso Físico -->
+                    Otra Funcion
+                </a>
+            </nav>
+            <div class="sidebar-bottom">
+                <a href="inicio_sesion.html" class="menu-item outline-btn">
+                    <!-- Ícono Cerrar Sesión -->
+                    Cerrar Sesión
+                </a>
+            </div>
+        </aside>
+
+        <!--contenido principal inicio funcionario-->
+
+        <main class="main-content">
+            <div class="progress-header">
+                <div class="header-text">
+                    <h1>Mi Progreso Físico</h1>
+                    <p>Histórico de tu evolución antropométrica, control de peso, porcentaje de grasa y masa muscular en el gimnasio.</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-outline">Descargar Informe PDF</button>
+                    <button class="btn-solid">Nueva Medición</button>
+                </div>
+            </div>
+
+            <!-- Tarjetas de Indicadores (KPIs) -->
+            <div class="kpi-grid">
+                <!-- Tarjeta 1 -->
+                <div class="kpi-card">
+                    <div class="kpi-top">
+                        <span class="kpi-label">PESO CORPORAL</span>
+                        <span class="badge-green">-4.5 kg</span>
+                    </div>
+                    <div class="kpi-value">
+                        <strong>72</strong> <span class="unit">kg</span>
+                    </div>
+                    <div class="kpi-footer">Inicio: 76.5 kg</div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="kpi-card">
+                    <div class="kpi-top">
+                        <span class="kpi-label">% GRASA CORP.</span>
+                        <span class="badge-green">-4.4%</span>
+                    </div>
+                    <div class="kpi-value">
+                        <strong>18</strong> <span class="unit">%</span>
+                    </div>
+                    <div class="kpi-footer">Inicio: 22.4%</div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="kpi-card">
+                    <div class="kpi-top">
+                        <span class="kpi-label">% MASA MUSCULAR</span>
+                        <span class="badge-green">+2.8%</span>
+                    </div>
+                    <div class="kpi-value">
+                        <strong>34.6</strong> <span class="unit">%</span>
+                    </div>
+                    <div class="kpi-footer">Inicio: 31.8%</div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="kpi-card">
+                    <div class="kpi-top">
+                        <span class="kpi-label">ÍNDICE IMC</span>
+                        <span class="badge-green-light">Normopeso</span>
+                    </div>
+                    <div class="kpi-value">
+                        <strong>22.7</strong>
+                    </div>
+                    <div class="kpi-footer">Rango Óptimo: 18.5 - 24.9</div>
+                </div>
+            </div>
+
+            <!-- Tabla de Historial -->
+            <div class="history-section">
+                <div class="history-header">
+                    <h3>Registro Histórico de Valoraciones Antropométricas</h3>
+                    <span class="eval-count">5 evaluaciones</span>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="history-table">
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Evaluador Responsable</th>
+                                <th>Peso</th>
+                                <th>% Grasa</th>
+                                <th>% Músculo</th>
+                                <th>IMC</th>
+                                <th>Pecho</th>
+                                <th>Cintura</th>
+                                <th>Cadera</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>2026-03-01</strong></td>
+                                <td><span class="user-icon">👤</span> Carlos Andrés Gómez</td>
+                                <td class="text-green-bold">76.5 kg</td>
+                                <td>22.4%</td>
+                                <td>31.8%</td>
+                                <td>24.1</td>
+                                <td>98 cm</td>
+                                <td>86 cm</td>
+                                <td>101 cm</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2026-04-15</strong></td>
+                                <td><span class="user-icon">👤</span> Carlos Andrés Gómez</td>
+                                <td class="text-green-bold">75.2 kg</td>
+                                <td>21.1%</td>
+                                <td>32.5%</td>
+                                <td>23.7</td>
+                                <td>99 cm</td>
+                                <td>84 cm</td>
+                                <td>100 cm</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2026-06-01</strong></td>
+                                <td><span class="user-icon">👤</span> Carlos Andrés Gómez</td>
+                                <td class="text-green-bold">74 kg</td>
+                                <td>19.8%</td>
+                                <td>33.4%</td>
+                                <td>23.3</td>
+                                <td>101 cm</td>
+                                <td>82 cm</td>
+                                <td>99 cm</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2026-07-15</strong></td>
+                                <td><span class="user-icon">👤</span> Carlos Andrés Gómez</td>
+                                <td class="text-green-bold">73.1 kg</td>
+                                <td>18.9%</td>
+                                <td>34%</td>
+                                <td>23</td>
+                                <td>102 cm</td>
+                                <td>80.5 cm</td>
+                                <td>98 cm</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2026-08-15</strong></td>
+                                <td><span class="user-icon">👤</span> Carlos Andrés Gómez</td>
+                                <td class="text-green-bold">72 kg</td>
+                                <td>18%</td>
+                                <td>34.6%</td>
+                                <td>22.7</td>
+                                <td>103 cm</td>
+                                <td>79.5 cm</td>
+                                <td>97.5 cm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!--barra de abajo pie de paguina-->
+    <header class="top-navbars">
+        <div class="nav-pie-paguina">© 2026 Servicio Nacional de Aprendizaje SENA— Agrofit</div>
+    </header>
+</body>
+
+</html>

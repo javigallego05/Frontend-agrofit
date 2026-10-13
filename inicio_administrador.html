@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGROFIT</title>
+    <link rel="stylesheet" href="CSS/inicio_sesion.css">
+    <link rel="stylesheet" href="CSS/inicio_admin.css">
+
+</head>
+
+<body>
+    <!--barra superior-->
+    <header class="top-navbar">
+        <div class="nav-logo"> Agrofit <span class="badge">SENA</span></div>
+        <div class="nav-title">Sistema de Acondicionamiento Físico y Gimnasio</div>
+    </header>
+
+    <!--pestañas de inicio_principal-->
+    <div class="dashboard-layout">
+
+
+        <!--menu lateral de la izquierda-->
+        <aside class="sidebar">
+            <div class="user-card">
+                <img src="img/logo_sena 2.png" alt="SENA" class="logo-img">
+                <div class="user-info">
+                    <strong>Agrofit SENA</strong><br>
+                    <span>Portal Administrador</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="#" class="menu-item menu-item-active">
+                    <!-- Ícono Inicio -->
+                    Inicio & Control
+                </a>
+                <a href="usuarios_administrador.html" class="menu-item">
+                    <!-- Ícono Mis Rutinas -->
+                    Usuarios & Entrenadores
+                </a>
+                <a href="fichas_administrador.html" class="menu-item">
+                    <!-- Ícono Progreso Físico -->
+                    Fichas SENA
+                </a>
+                <a href="inventario_administrador.html" class="menu-item">
+                    <!-- Ícono Progreso Físico -->
+                    Inventario de Máquinas
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="inicio_sesion.html" class="menu-item outline-btn">
+                    <!-- Ícono Cerrar Sesión -->
+                    Cerrar Sesión
+                </a>
+            </div>
+        </aside>
+
+        <!--contenido central del dashboard-->
+        <main class="main-content">
+            <header class="welcome-header">
+                <div class="welcome-info">
+                    <h1>Panel de Control: Dra. Andrea Morales</h1>
+                    <p>Supervisión integral de entrenadores, asignación de rutinas, fichasen formación, inventario de máquinas y salud ocupacional del SENA.</p>
+                </div>
+            </header>
+
+            <!--tarjetas de control-->
+            <div class="dashboard-wrapper">
+                <!-- Encabezado superior -->
+                <div class="dashboard-header">
+                    <div class="header-left">
+                        <svg class="header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                        </svg>
+                        <h2>Control Total de Módulos de la Plataforma</h2>
+                    </div>
+                    <span class="header-sub">Gestión centralizada SENA</span>
+                </div>
+
+                <!--contenedores-->
+                <div class="cards-grid">
+
+                    <!--usuarios-->
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="card-label">Usuarios</span>
+                            <div class="icon-badge">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-main-val">11</div>
+                        <p class="card-desc">7 Aprendices • 2 Entrenadores</p>
+                    </div>
+
+                    <!--fichas SENA-->
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="card-label">Fichas SENA</span>
+                            <div class="icon-badge">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-main-val">4</div>
+                        <p class="card-desc">Fichas en horario de gimnasio</p>
+                    </div>
+
+                    <!--inventario máquinas-->
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="card-label">Inventario Maquinas</span>
+                            <div class="icon-badge">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-main-val">6 Equipos</div>
+                        <p class="card-desc">4 Operativas • 2 En revisión</p>
+                    </div>
+
+                    <!--supervisión rutinas-->
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="card-label">Supervición Rutinas</span>
+                            <div class="icon-badge">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M6.5 6.5h11M6.5 17.5h11M4 12h16"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-main-val">4</div>
+                        <p class="card-desc">Banco oficial + asignaciones</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECCIÓN DE HABILITACIÓN DE ENTRENADORES -->
+            <div class="coaches-section">
+                <!-- Encabezado de la sección -->
+                <div class="coaches-header">
+                    <div class="coaches-header-left">
+                        <div class="coaches-header-text">
+                            <h3>Habilitación y Control de Entrenadores del Gimnasio</h3>
+                            <p>Como funcionario/administrador puedes habilitar o deshabilitar instructores para asignar
+                                rutinas y registrar evaluaciones</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--contenedor de las tarjetas de los entrenadores-->
+                <div class="coaches-cards-grid">
+
+                    <!--tarjeta entrenador 1-->
+                    <div class="coach-card">
+                        <div class="coach-profile">
+                            <div class="coach-details">
+                                <div class="coach-name-row">
+                                    <h4>Carlos Andrés Gómez</h4>
+                                    <span class="badge-enabled">HABILITADO</span>
+                                </div>
+                                <p class="coach-meta">CC 80129384 • carlos.gomez@sena.edu.co</p>
+                                <p class="coach-stats">5 aprendices asignados • 95 sesiones impartidas</p>
+                            </div>
+                        </div>
+                        <div class="coach-footer">
+                            <div class="coach-permission">
+                                <span>Permiso de Asignación:</span>
+                                <p>Autorizado para prescribir planes y valorar</p>
+                            </div>
+                            <button class="btn-disable">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                                </svg>
+                                Deshabilitar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta Entrenador 2 -->
+                    <div class="coach-card">
+                        <div class="coach-profile">
+                            <div class="coach-details">
+                                <div class="coach-name-row">
+                                    <h4>Prof. David Hernández</h4>
+                                    <span class="badge-enabled">HABILITADO</span>
+                                </div>
+                                <p class="coach-meta">CC 79841203 • david.hernandez@sena.edu.co</p>
+                                <p class="coach-stats">2 aprendices asignados • 64 sesiones impartidas</p>
+                            </div>
+                        </div>
+                        <div class="coach-footer">
+                            <div class="coach-permission">
+                                <span>Permiso de Asignación:</span>
+                                <p>Autorizado para prescribir planes y valorar</p>
+                            </div>
+                            <button class="btn-disable">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                                </svg>
+                                Deshabilitar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!--barra de abajo pie de paguina-->
+    <header class="top-navbars">
+        <div class="nav-pie-paguina">© 2026 Servicio Nacional de Aprendizaje SENA— Agrofit</div>
+    </header>
+</body>
+
+</html>

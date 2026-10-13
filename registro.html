@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGROFIT</title>
+    <link rel="stylesheet" href="CSS/inicio_sesion.css">
+    <link rel="stylesheet" href="CSS/registro.css">
+
+</head>
+
+<body>
+    <!--barra superior-->
+    <header class="top-navbar">
+        <div class="nav-logo"> Agrofit <span class="badge">SENA</span></div>
+        <div class="nav-title">Sistema de Acondicionamiento Físico y Gimnasio</div>
+    </header>
+
+    <!--pestañas de inicio y de registro-->
+    <div class="login-container_registro">
+        <div class="tabs">
+            <div class="tab">
+                <span class="menu_overlay">
+                    <a href="inicio_sesion.html" class="menu_link">Inicio Sesion</a>
+                </span>
+            </div>
+            <div class="tab active">
+                <span class="menu_overlay">
+                    <a href="registro.html" class="menu_link">Registrarse</a>
+                </span>
+            </div>
+        </div>
+
+        <div class="login-body">
+            <!--titulo principal y logo -->
+            <img src="img/logo_sena 2.png" alt="Logo SENA" class="logo-registro">
+            <h2 class="card-title">Crear Cuenta AGROFIT</h2>
+            <p class="card-subtitle">Completa tus datos institucionales para habilitar tu accseso al gimnasio</p>
+
+            <form>
+                <div class="form-group">
+                    <!--tipo de documento y numero documento-->
+                    <label class="section-label">DOCUMENTO DE IDENTIDAD</label>
+                    <div class="input-group">
+                        <select class="doc-type">
+                            <option>C.C.</option>
+                            <option>T.I.</option>
+                            <option>C.E.</option>
+                            <option>PEP</option>
+                        </select>
+                        <input type="text" class="form-control" placeholder="Ej. 1023948572">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <!--nombre y apellidos -->
+                    <div class="form-group">
+                        <label class="section-label">NOMBRES Y APELLIDOS COMPLETOS</label>
+                        <input type="text" class="form-control" placeholder="Ej. Mariana Morales Rincon">
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+                    <!--correo y telefono-->
+                    <div class="form-group">
+                        <label class="section-label">CORREO INSTITUCIONAL O PERSONAL</label>
+                        <input type="email" class="form-control" placeholder="nombre@misena.edu.co">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="section-label">TELÉFONO / CELULAR</label>
+                        <input type="tel" class="form-control" placeholder="+57 310 000 0000">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <!--rol y centro de formacion-->
+                    <div class="form-group">
+                        <label class="section-label">ROL</label>
+                        <select class="form-control">
+                            <option>Aprendiz</option>
+                            <option>Funcionario</option>
+                            <option>Entrenador</option>
+                        </select>
+                    </div>
+                
+                    <div class="form-group">
+                        <label class="section-label">CENTRO DE FORMACIÓN</label>
+                        <select class="form-control">
+                            <option>CBA - Mosquera</option>
+                            <option>CA - Popayan</option>
+                            <option>CTT - Bogotá</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <!--numero de ficha y nombre programa-->
+                    <div class="form-group_a">
+                        <label class="section-label">Numero de Ficha</label>
+                        <input type="tel" class="form-control" placeholder="2694520">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <!--peso y estatura-->
+                    <div class="form-group">
+                        <label class="section-label">CONTRASEÑA</label>
+                        <input type="tel" class="form-control" placeholder="Minimo 8 caracteres">
+                    </div>
+                
+                    <div class="form-group">
+                        <label class="section-label">CONFIRMAR CONTRASEÑA</label>
+                        <input type="tel" class="form-control" placeholder="Repite la contraseña">
+                    </div>
+                </div>
+
+                 <div class="checkbox-group">
+                    <!--terminos de uso -->
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Acepto los terminos de uso del gimnasio y autorizo el tratamineto de mis datos personales segun la normativa institucional del SENA(Ley 1581 de 2012)</label>
+                </div>
+
+                <!--Boton de crear cuenta-->
+                <button type="submit" class="btn__sena">Crear mi Cuenta</button>
+
+            </form>
+        </div>
+    </div>
+    <!--barra de abajo pie de paguina-->
+    <header class="top-navbars">
+        <div class="nav-pie-paguina">© 2026 Servicio Nacional de Aprendizaje SENA— Agrofit</div>
+    </header>
+</body>
+
+</html>

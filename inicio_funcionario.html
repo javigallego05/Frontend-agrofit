@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGROFIT</title>
+    <link rel="stylesheet" href="CSS/inicio_sesion.css">
+    <link rel="stylesheet" href="CSS/inicio_admin.css">
+    <link rel="stylesheet" href="CSS/inicio_funcionarios.css">
+</head>
+
+<body>
+    <!--barra superior-->
+    <header class="top-navbar">
+        <div class="nav-logo"> Agrofit <span class="badge">SENA</span></div>
+        <div class="nav-title">Sistema de Acondicionamiento Físico y Gimnasio</div>
+    </header>
+
+    <!--pestañas de inicio_principal-->
+    <div class="dashboard-layout">
+
+
+        <!--menu lateral de la izquierda-->
+        <aside class="sidebar">
+            <div class="user-card">
+                <img src="img/logo_sena 2.png" alt="SENA" class="logo-img">
+                <div class="user-info">
+                    <strong>Agrofit SENA</strong><br>
+                    <span>Portal Funcionario</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="#" class="menu-item menu-item-active">
+                    <!-- Ícono Inicio -->
+                    Inicio
+                </a>
+                <a href="rutinas_funcionario.html" class="menu-item">
+                    <!-- Ícono Mis Rutinas -->
+                    Mis Rutinas
+                </a>
+                <a href="progreso_funcionario.html" class="menu-item">
+                    <!-- Ícono Progreso Físico -->
+                    Progreso Fisico
+                </a>
+                <a href="otra_funcion_funcionario.html" class="menu-item">
+                    <!-- Ícono Progreso Físico -->
+                    Otra Funcion
+                </a>
+            </nav>
+            <div class="sidebar-bottom">
+                <a href="inicio_sesion.html" class="menu-item outline-btn">
+                    <!-- Ícono Cerrar Sesión -->
+                    Cerrar Sesión
+                </a>
+            </div>
+        </aside>
+
+        <!--contenido principal inicio funcionario-->
+
+        <main class="main-content">
+
+            <!--Banner de Bienvenida y Funciones-->
+            <div class="welcome-banner-func">
+                <div class="banner-top">
+                    <div class="banner-info">
+                        <div class="banner-tags">
+                        </div>
+                        <h1>Bienvenido, Marta Lucía Gómez</h1>
+                        <p class="subtitle">Operaria de Servicios Generales y Aseo del Gimnasio • Turno Mañana: 06:00 AM - 02:00 PM</p>
+                    </div>
+
+                    <div class="banner-actions">
+                        <button class="btn-primary">Marcar Ingreso a Entrenar</button>
+                        <button class="btn-secondary">Agendar Valoración</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Grid de Indicadores (KPIs)-->
+            <div class="kpi-grid-func">
+
+                <!--Tarjeta 1-->
+                <div class="kpi-card">
+                    <div class="kpi-header">
+                        <span>ÁREAS DESINFECTADAS</span>
+                    </div>
+                    <div class="kpi-body">
+                        <span class="kpi-value text-green">4 de 6</span>
+                    </div>
+                    <div class="kpi-footer">Protocolo de Bioseguridad SENA</div>
+                </div>
+
+                <!--Tarjeta 2-->
+                <div class="kpi-card">
+                    <div class="kpi-header">
+                        <span>PRÓXIMA RONDA PROGRAMADA</span>
+                    </div>
+                    <div class="kpi-body">
+                        <span class="kpi-value text-blue">12:00 PM</span>
+                    </div>
+                    <div class="kpi-footer">Sanitización Post-Jornada Mañana</div>
+                </div>
+
+                <!--Tarjeta 3-->
+                <div class="kpi-card">
+                    <div class="kpi-header">
+                        <span>NIVEL GENERAL INSUMOS</span>
+                    </div>
+                    <div class="kpi-body">
+                        <span class="kpi-value text-orange">80% Stock</span>
+                    </div>
+                    <div class="kpi-footer">Alcohol, Gel y Toallas Disponibles</div>
+                </div>
+
+                <!--Tarjeta 4: Aforo-->
+                <div class="kpi-card">
+                    <div class="kpi-header">
+                        <span>AFORO EN SALA GYM</span>
+                    </div>
+                    <div class="kpi-body flex-between">
+                        <div>
+                            <span class="kpi-value">16</span> <span class="kpi-sub">/ 35 max</span>
+                        </div>
+                        <span class="badge-capacity">46% Capacidad</span>
+                    </div>
+                    <div class="kpi-footer aforo-actions">
+                        <span class="aforo-label">Modificar:</span>
+                    </div>
+                </div>
+
+                <!--Tarjeta 5-->
+                <div class="kpi-card">
+                    <div class="kpi-header">
+                        <span>RONDA DE INSPECCIÓN</span>
+                    </div>
+                    <div class="kpi-body">
+                        <span class="kpi-value text-green">4 de 6</span>
+                    </div>
+                    <div class="kpi-footer">Puntos de control verificados</div>
+                </div>
+
+                <!--Tarjeta 6-->
+                <div class="kpi-card">
+                    <div class="kpi-header">
+                        <span>INCIDENTES / OBJETOS</span>
+                    </div>
+                    <div class="kpi-body">
+                        <span class="kpi-value">2 Registros</span>
+                    </div>
+                    <div class="kpi-footer">Custodia y novedades del día</div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!--barra de abajo pie de paguina-->
+    <header class="top-navbars">
+        <div class="nav-pie-paguina">© 2026 Servicio Nacional de Aprendizaje SENA— Agrofit</div>
+    </header>
+</body>
+
+</html>

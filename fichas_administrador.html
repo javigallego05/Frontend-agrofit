@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGROFIT</title>
+    <link rel="stylesheet" href="CSS/inicio_sesion.css">
+    <link rel="stylesheet" href="CSS/inicio_admin.css">
+    <link rel="stylesheet" href="CSS/fichas_admin.css">
+
+</head>
+
+<body>
+    <!--barra superior-->
+    <header class="top-navbar">
+        <div class="nav-logo"> Agrofit <span class="badge">SENA</span></div>
+        <div class="nav-title">Sistema de Acondicionamiento Físico y Gimnasio</div>
+    </header>
+
+    <!--pestañas de inicio_principal-->
+    <div class="dashboard-layout">
+
+
+        <!--menu lateral de la izquierda-->
+        <aside class="sidebar">
+            <div class="user-card">
+                <img src="img/logo_sena 2.png" alt="SENA" class="logo-img">
+                <div class="user-info">
+                    <strong>Agrofit SENA</strong><br>
+                    <span>Portal Administrador</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="inicio_administrador.html" class="menu-item">
+                    <!-- Ícono Inicio -->
+                    Inicio & Control
+                </a>
+                <a href="usuarios_administrador.html" class="menu-item">
+                    <!-- Ícono Mis Rutinas -->
+                    Usuarios & Entrenadores
+                </a>
+                <a href="#" class="menu-item menu-item-active">
+                    <!-- Ícono Progreso Físico -->
+                    Fichas SENA
+                </a>
+                <a href="inventario_administrador.html" class="menu-item">
+                    <!-- Ícono Progreso Físico -->
+                    Inventario de Máquinas
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="inicio_sesion.html" class="menu-item outline-btn">
+                    <!-- Ícono Cerrar Sesión -->
+                    Cerrar Sesión
+                </a>
+            </div>
+        </aside>
+
+        <!--panel principal de fichas administrador-->
+
+        <main class="main-content">
+            <div class="fichas-header">
+                <div class="fichas-title-container">
+                    <h1>Fichas de Formación y Horarios de Gimnasio</h1>
+                    <p>Asignación de franjas horarias de acondicionamiento físico por programa del SENA.</p>
+                </div>
+                <button class="btn-nuevo">+ Asignar Nueva Ficha</button>
+            </div>
+
+            <!-- Barra de búsqueda y filtros -->
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar por número de ficha o programa...">
+                <select>
+                    <option>Todas las Jornadas</option>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </div>
+
+            <!-- Cuadrícula de Fichas -->
+            <div class="fichas-grid">
+
+                <!-- Tarjeta 1 (Ficha Activa/Destacada) -->
+                <div class="ficha-card card-active">
+                    <div class="ficha-header-tags">
+                        <span class="tag-ficha">Ficha #2694520</span>
+                        <span class="tag-jornada">Mañana</span>
+                    </div>
+
+                    <h3 class="ficha-title">ADSO - Análisis y Desarrollo de Software</h3>
+                    <p class="ficha-location">Centro Agropecuario - Popyán</p>
+
+                    <div class="ficha-info">
+                        <div class="info-row">
+                            <span class="info-label green">Horario Gimnasio:</span>
+                            <strong class="info-value">Mar y Jue 08:00 - 10:00 AM</strong>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Instructor:</span>
+                            <strong class="info-value">Carlos Andrés Gómez</strong>
+                        </div>
+                    </div>
+
+                    <!-- Barra de progreso -->
+                    <div class="ficha-progress">
+                        <div class="progress-header">
+                            <span class="progress-text">Aprendices Activos en Gimnasio</span>
+                            <strong class="progress-value">28 / 32 (88%)</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 88%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="ficha-card">
+                    <div class="ficha-header-tags">
+                        <span class="tag-ficha">Ficha #2718930</span>
+                        <span class="tag-jornada">Tarde</span>
+                    </div>
+
+                    <h3 class="ficha-title">Tecnología en Gestión de Recursos Naturales</h3>
+                    <p class="ficha-location">CA - Popayán</p>
+
+                    <div class="ficha-info">
+                        <div class="info-row">
+                            <span class="info-label green">Horario Gimnasio:</span>
+                            <strong class="info-value">Lun y Mié 14:00 - 16:00 PM</strong>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Instructor:</span>
+                            <strong class="info-value">Laura Sánchez</strong>
+                        </div>
+                    </div>
+
+                    <!-- Barra de progreso -->
+                    <div class="ficha-progress">
+                        <div class="progress-header">
+                            <span class="progress-text">Aprendices Activos en Gimnasio</span>
+                            <strong class="progress-value">24 / 28 (86%)</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 86%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!--barra de abajo pie de paguina-->
+    <header class="top-navbars">
+        <div class="nav-pie-paguina">© 2026 Servicio Nacional de Aprendizaje SENA— Agrofit</div>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+:root{
+    --color-principal: #ffff;
+    --color-secundario: #13541b;
+    --color-background: #f2ffe8;
+    --color-sena: #13541b; 
+    --color-text: #333333;
+    --color-border: #e0e0e0;
+    
+
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+/* Aplicar a toda la página */
+html, body {
+    overflow: auto;
+    margin: 0;
+    height: 100vh;
+}
+
+body { 
+    background-color: var(--color-background);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*barra lateral de arriba*/
+.top-navbar {
+    background-color: var(--color-secundario);
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title{
+    font-size: small;
+}
+
+/*contenedor principal*/
+.login-container{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    background-color: var(--color-principal);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+   
+}
+/*Pestañas inicio y registro*/
+.tabs {
+    display: flex;
+    border-bottom: 1px solid var(--color-border);
+}
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    color: gray;
+    font-weight: bold;
+}
+.tab.active {
+    color: var(--color-sena);
+    border-top: 4px solid var(--color-sena);
+    background: white;
+}
+
+.menu_link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*logo sena y subtitulos*/
+.login-body {
+    padding: 30px;
+    text-align: center;
+}
+
+.logo{
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+.card-title { 
+    font-size: 24px; 
+    margin-bottom: 5px; 
+}
+
+.card-subtitle { 
+    font-size: 14px; color: gray; 
+    margin-bottom: 25px; 
+}
+
+/*campos documento y contraseña*/
+form { 
+    text-align: left; 
+}
+
+.form-group { 
+    margin-bottom: 10px; 
+}
+
+.section-label { 
+    font-size: 12px; 
+    font-weight: bold; 
+    color: #555; 
+    display: block; 
+    margin-bottom: 8px; 
+}
+
+.input-group { 
+    display: flex; 
+    gap: 10px; 
+}
+
+.doc-type { 
+    width: 30%; 
+    padding: 10px; 
+    border: 1px solid var(--color-border); 
+    border-radius: 4px; 
+
+}
+.form-control { 
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid var(--color-border); 
+    border-radius: 4px; 
+}
+
+.label-flex { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+.forgot__contra { 
+    color: var(--color-sena); 
+    font-size: 12px; 
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+.checkbox-group { 
+    font-size: 14px; 
+    color: #555; 
+    margin-bottom: 20px;
+}
+
+/*Boton ingreso*/
+
+.btn__sena {
+    width: 100%;
+    background-color: var(--color-sena);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn__sena:hover { 
+    background-color: var(--color-sena); 
+}
+
+/*estilos de pestaña recuperacion de contraseña*/
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f5faef; 
+    border: 1px solid #c8e6c9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-sub {
+    margin-bottom: 25px;
+    padding: 0 10px;
+    line-height: 1.4;
+}
+
+.text-muted {
+    color: #777;
+    font-size: 0.8em;
+    display: block;
+    margin-top: 5px;
+}
+
+.btn-continue {
+    background-color: #13541b; 
+    margin-top: 15px;
+}
+
+.btn-continue:hover {
+    background-color: #13541b;
+}
+
+.mt-3 {
+    margin-top: 25px;
+}
+
+.cancel-link {
+    color: #00703c; 
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.cancel-link:hover {
+    text-decoration: underline;
+}
+
+/*barra de abajo pie de paguina */
+.top-navbars {
+    background-color: var(--color-secundario);
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGROFIT</title>
+    <link rel="stylesheet" href="CSS/inicio_sesion.css">
+    <link rel="stylesheet" href="CSS/inicio_admin.css">
+    <link rel="stylesheet" href="CSS/usuarios_admin.css">
+
+</head>
+
+<body>
+    <!--barra superior-->
+    <header class="top-navbar">
+        <div class="nav-logo"> Agrofit <span class="badge">SENA</span></div>
+        <div class="nav-title">Sistema de Acondicionamiento Físico y Gimnasio</div>
+    </header>
+
+    <!--pestañas de inicio_principal-->
+    <div class="dashboard-layout">
+
+        <!--menu lateral de la izquierda-->
+        <aside class="sidebar">
+            <div class="user-card">
+                <img src="img/logo_sena 2.png" alt="SENA" class="logo-img">
+                <div class="user-info">
+                    <strong>Agrofit SENA</strong><br>
+                    <span>Portal Administrador</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="inicio_administrador.html" class="menu-item">
+                    <!-- Ícono Inicio -->
+                    Inicio & Control
+                </a>
+                <a href="#" class="menu-item menu-item-active">
+                    <!-- Ícono Mis Rutinas -->
+                    Usuarios & Entrenadores
+                </a>
+                <a href="fichas_administrador.html" class="menu-item">
+                    <!-- Ícono Progreso Físico -->
+                    Fichas SENA
+                </a>
+                <a href="inventario_administrador.html" class="menu-item">
+                    <!-- Ícono Progreso Físico -->
+                    Inventario de Máquinas
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="inicio_sesion.html" class="menu-item outline-btn">
+                    <!-- Ícono Cerrar Sesión -->
+                    Cerrar Sesión
+                </a>
+            </div>
+        </aside>
+
+        <!--panel usuarios-->
+        <main class="main-content">
+            <div class="page-header">
+                <div class="header-text">
+                    <h2>Gestión Integral de Usuarios y Entrenadores</h2>
+                    <p>Control de perfiles, permisos de entrenadores, fichas formativas y certificados médicos.</p>
+                </div>
+                <button class="btn-primary">Registrar Nuevo Usuario</button>
+            </div>
+
+            <!--tarjetas de resumen-->
+            <div class="summary-cards">
+                <div class="card">
+                    <span class="card-title">Total en Plataforma</span>
+                    <strong class="card-number">11</strong>
+                    <span class="card-desc">Comunidad SENA CBA</span>
+                </div>
+                <div class="card">
+                    <span class="card-title">Aprendices Activos</span>
+                    <strong class="card-number text-green">7</strong>
+                    <span class="card-desc">En formación técnica</span>
+                </div>
+                <div class="card">
+                    <span class="card-title">Entrenadores Habilitado</span>
+                    <strong class="card-number text-green">2</strong>
+                    <span class="card-desc">Instructores de acondicionamiento</span>
+                </div>
+                <div class="card">
+                    <span class="card-title">Funcionarios / Admin</span>
+                    <strong class="card-number text-blue">2</strong>
+                    <span class="card-desc">Personal administrativo</span>
+                </div>
+            </div>
+
+            <!--filtros de búsqueda-->
+            <div class="filters-bar">
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar por nombre, documento o ficha">
+                </div>
+                <div class="filter-selects">
+                    <select>
+                        <option>Todos los Roles</option>
+                        <option>Aprendiz</option>
+                        <option>Entrenador</option>
+                    </select>
+                    <select>
+                        <option>Estado Médico: Todos</option>
+                        <option>Apto Gimnasio</option>
+                        <option>Examen Pendiente</option>
+                    </select>
+                </div>
+            </div>
+
+            <!--tabla de datos-->
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>USUARIO / DOCUMENTO</th>
+                            <th>ROL INSTITUCIONAL</th>
+                            <th>FICHA / DEPENDENCIA</th>
+                            <th>APTITUD MÉDICA</th>
+                            <th>PERMISOS / ESTADO</th>
+                            <th>ACCIONES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="user-cell">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                    </svg>
+                                    <div class="user-details">
+                                        <strong>Javier Camilo Pérez</strong>
+                                        <span>CC 1023948572</span>
+                                        <span>javier.perez@misena.edu.co</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="badge badge-aprendiz">Aprendiz</span></td>
+                            <td>
+                                <div class="ficha-details">
+                                    <span class="badge-ficha">Ficha 3387753</span>
+                                    <span>ADSO - Análisis y Desarrollo de Software</span>
+                                </div>
+                            </td>
+                            <td><span class="badge badge-apto">Apto Gimnasio</span></td>
+                            <td>28 asistencias</td>
+                            <td><button class="btn-action">Ver Perfil</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="user-cell">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                    </svg>
+                                    <div class="user-details">
+                                        <strong>Carlos Andrés Gómez</strong>
+                                        <span>CC 80129384</span>
+                                        <span>carlos.gomez@sena.edu.co</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="badge badge-entrenador">Entrenador</span></td>
+                            <td>Administración</td>
+                            <td><span class="badge badge-apto">Apto Gimnasio</span></td>
+                            <td><span class="badge badge-habilitado">HABILITADO</span> <a href="#"
+                                    class="link-danger">Deshabilitar</a></td>
+                            <td><button class="btn-action">Ver Perfil</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="user-cell">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                    </svg>
+                                    <div class="user-details">
+                                        <strong>Mateo Morales Silva</strong>
+                                        <span>CC 1033491823</span>
+                                        <span>mateo.morales@misena.edu.co</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="badge badge-aprendiz">Aprendiz</span></td>
+                            <td>
+                                <div class="ficha-details">
+                                    <span class="badge-ficha">Ficha 2718930</span>
+                                    <span>Gestión de Recursos Naturales</span>
+                                </div>
+                            </td>
+                            <td><span class="badge badge-pendiente">Examen Pendiente</span></td>
+                            <td>12 asistencias</td>
+                            <td><button class="btn-action">Ver Perfil</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <!--barra de abajo pie de paguina-->
+    <header class="top-navbars">
+        <div class="nav-pie-paguina">© 2026 Servicio Nacional de Aprendizaje SENA— Agrofit</div>
+    </header>
+</body>
+
+</html>

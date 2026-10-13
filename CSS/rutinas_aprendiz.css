@@ -1,0 +1,366 @@
+/* =========================================
+   ESTRUCTURA GENERAL Y ENCABEZADO
+========================================= */
+.main-content {
+    padding: 20px 30px;
+    width: 100%;
+    background-color: #f2ffe8;
+    overflow-y: auto;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.page-header {
+    margin-bottom: 25px;
+}
+
+.page-header h1 {
+    font-size: 26px;
+    color: #1a1a1a;
+    margin: 0 0 5px 0;
+    font-weight: 800;
+}
+
+.page-header p {
+    color: #555;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* =========================================
+   TARJETA RUTINA ACTIVA
+========================================= */
+.rutina-activa-card {
+    background: #ffffff;
+    border: 2px solid #39a900;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.rutina-header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.category-text {
+    color: #2d8500;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.rutina-titles h2 {
+    margin: 0 0 5px 0;
+    font-size: 24px;
+    color: #1a1a1a;
+}
+
+.rutina-titles p {
+    margin: 0;
+    color: #555;
+    font-size: 13px;
+}
+
+.assigned-by-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.assigned-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.assigned-info .label {
+    font-size: 10px;
+    color: #777;
+    font-weight: bold;
+}
+
+.assigned-info strong {
+    font-size: 14px;
+    color: #1a1a1a;
+    margin: 2px 0;
+}
+
+.assigned-info .sub-label {
+    font-size: 11px;
+    color: #39a900;
+}
+
+/* Stats (Duración, etc) */
+.rutina-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-box {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.stat-label {
+    font-size: 11px;
+    color: #777;
+    font-weight: bold;
+}
+
+.stat-value {
+    font-size: 16px;
+    color: #1a1a1a;
+    font-weight: bold;
+}
+
+.text-red {
+    color: #c0392b;
+}
+
+.text-green {
+    color: #39a900;
+}
+
+/* Desglose Ejercicios */
+.ejercicios-section h3 {
+    font-size: 13px;
+    color: #555;
+    margin: 0 0 15px 0;
+}
+
+.ejercicios-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.ejercicio-item {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ejercicio-item.completed {
+    background-color: #f9fdf9;
+    border-color: #b7e4c7;
+}
+
+.ejercicio-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.check-icon {
+    font-size: 20px;
+    color: #39a900;
+}
+
+.uncheck-icon {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.ej-details {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.ej-details strong {
+    font-size: 14px;
+    color: #333;
+}
+
+.ej-details del {
+    font-size: 14px;
+    color: #888;
+}
+
+.ej-details small {
+    font-size: 11px;
+    color: #777;
+}
+
+.tag-gray {
+    background: #f0f0f0;
+    color: #555;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+.btn-play-large {
+    background-color: #39a900;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-play-large:hover {
+    background-color: #2d8500;
+}
+
+/* =========================================
+   CATÁLOGO
+========================================= */
+.catalogo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.catalogo-titles h2 {
+    font-size: 20px;
+    color: #1a1a1a;
+    margin: 0 0 4px 0;
+}
+
+.catalogo-titles p {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+}
+
+.catalogo-filters {
+    display: flex;
+    gap: 8px;
+}
+
+.filter-btn {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #555;
+}
+
+.filter-btn.active {
+    background: #39a900;
+    color: white;
+    border-color: #39a900;
+    font-weight: bold;
+}
+
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.catalogo-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.catalogo-card.card-active {
+    border: 2px solid #39a900;
+}
+
+.card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.tag-light {
+    border: 1px solid #b7e4c7;
+    color: #2d8500;
+    background-color: #f9fdf9;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+.time {
+    font-size: 12px;
+    color: #777;
+}
+
+.catalogo-card h3 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    color: #1a1a1a;
+}
+
+.catalogo-card p {
+    margin: 0 0 15px 0;
+    font-size: 12px;
+    color: #666;
+    min-height: 36px;
+}
+
+.card-stats {
+    background: #fcfcfc;
+    border: 1px solid #f0f0f0;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.stat-row:last-child {
+    margin-bottom: 0;
+}
+
+.stat-row span {
+    color: #666;
+}
+
+.card-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.btn-card-primary {
+    flex: 1;
+    background-color: #39a900;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}

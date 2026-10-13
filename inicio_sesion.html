@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGROFIT</title>
+    <link rel="stylesheet" href="CSS/inicio_sesion.css">
+
+</head>
+
+<body>
+    <!--barra superior-->
+    <header class="top-navbar">
+        <div class="nav-logo"> Agrofit <span class="badge">SENA</span></div>
+        <div class="nav-title">Sistema de Acondicionamiento Físico y Gimnasio</div>
+    </header>
+
+    <!--pestañas de inicio y de registro-->
+    <div class="login-container">
+        <div class="tabs">
+            <div class="tab active">
+                <span class="menu_overlay">
+                    <a href="inicio_sesion.html" class="menu_link">Inicio Sesión</a>
+                </span>
+            </div>
+            <div class="tab">
+                <span class="menu_overlay">
+                    <a href="registro.html" class="menu_link">Registrarse</a>
+                </span>
+            </div>
+        </div>
+
+        <div class="login-body" id="vista-login">
+            <img src="img/logo_sena 2.png" alt="Logo SENA" class="logo">
+            <h2 class="card-title">Iniciar Sesión</h2>
+            <p class="card-subtitle">ingresa con tus credenciales institucionales </p>
+
+            <form>
+                <!--campos documento y contraseña-->
+                <div class="form-group">
+                    <label class="section-label">DOCUMENTO DE IDENTIDAD</label>
+                    <div class="input-group">
+                        <select class="doc-type">
+                            <option>C.C.</option>
+                            <option>T.I.</option>
+                        </select>
+                        <input type="text" class="form-control" placeholder="Número de documento">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <!--contraseña recordar datos -->
+                    <div class="label-flex">
+                        <label class="section-label">CONTRASEÑA</label>
+                        <a href="#" class="forgot__contra" id="btn-olvido-contra">¿Olvidaste tu contraseña?</a>
+                    </div>
+                    <input type="password" class="form-control" placeholder="••••••••">
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Recordar datos en este equipo</label>
+                </div>
+
+                <!--Boton ingreso-->
+                <a href="inicio_entrenador.html">
+                    <button type="button" class="btn__sena">Ingresar</button>
+                </a>
+            </form>
+        </div>
+
+        <!--pestaña de recuperacion de contraseña-->
+        <div class="login-body" id="vista-recuperacion" style="display: none;">
+            
+            <div class="icon-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="100" viewBox="0,0,256,256">
+                    <g fill="#7e7e7e" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M7,5c-3.866,0 -7,3.134 -7,7c0,3.866 3.134,7 7,7c3.17067,0 5.84617,-2.10901 6.70703,-5h4.29297v3h4v-3h2v-4h-10.29297c-0.86086,-2.89099 -3.53636,-5 -6.70703,-5zM7,9c1.657,0 3,1.343 3,3c0,1.657 -1.343,3 -3,3c-1.657,0 -3,-1.343 -3,-3c0,-1.657 1.343,-3 3,-3z"></path></g></g>
+                </svg>
+            </div>
+
+            <h2 class="card-title text-center">Recuperar Contraseña</h2>
+            <p class="card-subtitle text-center mt-sub">Ingresa los datos asociados a tu cuenta de gimnasio SENA Agrofit para enviarte un código de restablecimiento.</p>
+
+            <form>
+                <div class="form-group">
+                    <label class="section-label">CORREO ELECTRÓNICO REGISTRADO</label>
+                    <input type="email" class="form-control" placeholder="juan.perez@misena.edu.co">
+                    <small class="text-muted">Te enviaremos un código de seguridad de 6 dígitos.</small>
+                </div>
+
+                <button type="button" class="btn__sena btn-continue">CONTINUAR</button>
+                
+                <div class="text-center mt-3">
+                    <a href="#" class="cancel-link" id="btn-cancelar">Cancelar y volver al inicio</a>
+                </div>
+            </form>
+        </div>
+
+        <!--recupercion por codigo por el correo-->
+
+    </div>
+    <!--barra de abajo pie de paguina-->
+    <header class="top-navbars">
+        <div class="nav-pie-paguina">© 2026 Servicio Nacional de Aprendizaje SENA — Agrofit</div>
+    </header>
+
+    <script src="herramientas/js/main.js"></script>
+</body>
+
+</html>

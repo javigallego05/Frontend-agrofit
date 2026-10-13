@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGROFIT</title>
+    <link rel="stylesheet" href="CSS/inicio_sesion.css">
+    <link rel="stylesheet" href="CSS/inicio_admin.css">
+    <link rel="stylesheet" href="CSS/rutinas_funcionario.css">
+</head>
+
+<body>
+    <!--barra superior-->
+    <header class="top-navbar">
+        <div class="nav-logo"> Agrofit <span class="badge">SENA</span></div>
+        <div class="nav-title">Sistema de Acondicionamiento Físico y Gimnasio</div>
+    </header>
+
+    <!--pestañas de inicio_principal-->
+    <div class="dashboard-layout">
+
+
+        <!--menu lateral de la izquierda-->
+        <aside class="sidebar">
+            <div class="user-card">
+                <img src="img/logo_sena 2.png" alt="SENA" class="logo-img">
+                <div class="user-info">
+                    <strong>Agrofit SENA</strong><br>
+                    <span>Portal Funcionario</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="inicio_funcionario.html" class="menu-item">
+                    <!-- Ícono Inicio -->
+                    Inicio
+                </a>
+                <a href="" class="menu-item menu-item-active">
+                    <!-- Ícono Mis Rutinas -->
+                    Mis Rutinas
+                </a>
+                <a href="progreso_funcionario.html" class="menu-item">
+                    <!-- Ícono Progreso Físico -->
+                    Progreso Fisico
+                </a>
+                <a href="otra_funcion_funcionario.html" class="menu-item">
+                    <!-- Ícono Progreso Físico -->
+                    Otra Funcion
+                </a>
+            </nav>
+            <div class="sidebar-bottom">
+                <a href="inicio_sesion.html" class="menu-item outline-btn">
+                    <!-- Ícono Cerrar Sesión -->
+                    Cerrar Sesión
+                </a>
+            </div>
+        </aside>
+
+        <!--contenido principal inicio funcionario-->
+
+        <main class="main-content">
+            <div class="page-header">
+                <h1>Mis Rutinas de Entrenamiento & Salud Laboral</h1>
+                <p>Consulta tu plan de acondicionamiento físico y salud postural formulado por los entrenadores.
+                </p>
+            </div>
+
+            <!-- Tarjeta Principal de Rutina Asignada -->
+            <div class="main-routine-card">
+
+                <div class="routine-top">
+                    <div class="routine-titles">
+                        <h2>Salud Postural & Fortalecimiento Lumbar (Servicios Generales / Aseo)</h2>
+                        <p>Diseñada para trabajadores de servicios generales: previene hernias, descompresiona la
+                            columna lumbar y fortalece core y tren inferior para levantamiento de cargas.</p>
+                    </div>
+
+                    <div class="assigned-by">
+                        <div class="instructor-info">
+                            <span class="assigned-label">ASIGNADA POR:</span>
+                            <strong>Carlos Andrés Gómez</strong>
+                            <span class="instructor-role">Instructor Gimnasio CBA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Estadísticas de la Rutina -->
+                <div class="routine-stats">
+                    <div class="stat-box">
+                        <span class="stat-label">DURACIÓN</span>
+                        <strong class="stat-value text-green">40 min</strong>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">INTENSIDAD</span>
+                        <strong class="stat-value text-green">Baja</strong>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">EJERCICIOS</span>
+                        <strong class="stat-value text-green">4 bloques</strong>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">ESTADO DE SESIÓN</span>
+                        <strong class="stat-value text-green">2 / 4 listos</strong>
+                    </div>
+                </div>
+
+                <!-- Desglose de Ejercicios -->
+                <div class="exercise-breakdown">
+                    <p class="breakdown-title">DESGLOSE DE EJERCICIOS DEL PLAN:</p>
+                    <div class="exercise-grid">
+
+                        <div class="exercise-item completed">
+                            <div class="checkbox-checked">✔</div>
+                            <div class="ex-info">
+                                <strong>1. Puente de Glúteos con Retención</strong>
+                                <span>4 series × 4x15 (sostén 3s) • Colchoneta</span>
+                            </div>
+                            <span class="ex-tag">Core</span>
+                        </div>
+
+                        <div class="exercise-item completed">
+                            <div class="checkbox-checked">✔</div>
+                            <div class="ex-info">
+                                <strong>2. Bird-Dog (Estabilidad Cruzada)</strong>
+                                <span>3 series × 3x12 por lado • Colchoneta</span>
+                            </div>
+                            <span class="ex-tag">Core</span>
+                        </div>
+
+                        <div class="exercise-item">
+                            <div class="checkbox-empty"></div>
+                            <div class="ex-info">
+                                <strong>3. Sentadilla en Copa (Goblet Squat)</strong>
+                                <span>3 series × 3x12 • Mancuerna 8kg o Kettlebell</span>
+                            </div>
+                            <span class="ex-tag">Piernas</span>
+                        </div>
+
+                        <div class="exercise-item">
+                            <div class="checkbox-empty"></div>
+                            <div class="ex-info">
+                                <strong>4. Jalón al Pecho en Polea Alta</strong>
+                                <span>3 series × 3x12 • Polea Alta</span>
+                            </div>
+                            <span class="ex-tag">Espalda</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="btn-start-routine">Abrir Modo de Entrenamiento Completo</button>
+            </div>
+
+            <!-- Catálogo de Rutinas -->
+            <div class="catalog-section">
+                <div class="catalog-header">
+                    <div class="catalog-title-area">
+                        <h3>📚 Catálogo Oficial de Rutinas Institucionales CBA</h3>
+                        <p>Planes validados por los instructores de acondicionamiento físico</p>
+                    </div>
+                    <div class="catalog-filters">
+                        <button class="filter-btn active">Todas</button>
+                        <button class="filter-btn">Tren Superior</button>
+                        <button class="filter-btn">Tren Inferior</button>
+                        <button class="filter-btn">Cardio HIIT</button>
+                        <button class="filter-btn">Fuerza</button>
+                        <button class="filter-btn">Full Body</button>
+                    </div>
+                </div>
+
+                <div class="catalog-grid">
+
+                    <!-- Tarjeta Catálogo 1 -->
+                    <div class="catalog-card highlight">
+                        <div class="card-top">
+                            <span class="tag-outline-green">Tren Superior</span>
+                            <span class="duration">45 min</span>
+                        </div>
+                        <h4>Fuerza Pectoral</h4>
+                        <p>Enfoque en desarrollo de potencia, fuerza pectoral y estabilización de cintura escapular.</p>
+                        <div class="card-details">
+                            <div class="detail-row"><span>Nivel de Intensidad:</span> <strong
+                                    class="text-orange">Media</strong></div>
+                            <div class="detail-row"><span>Ejercicios incluidos:</span> <strong>4</strong></div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn-primary-full">Ver Detalle</button>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta Catálogo 2 -->
+                    <div class="catalog-card highlight">
+                        <div class="card-top">
+                            <span class="tag-outline-green">Tren Inferior</span>
+                            <span class="duration">50 min</span>
+                        </div>
+                        <h4>Potencia de Pierna y Glúteo</h4>
+                        <p>Trabajo integral de cuádriceps, isquiotibiales y pantorrillas.</p>
+                        <div class="card-details">
+                            <div class="detail-row"><span>Nivel de Intensidad:</span> <strong
+                                    class="text-red">Alta</strong></div>
+                            <div class="detail-row"><span>Ejercicios incluidos:</span> <strong>4</strong></div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn-primary-full">Ver Detalle</button>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta Catálogo 3 -->
+                    <div class="catalog-card highlight">
+                        <div class="card-top">
+                            <span class="tag-outline-green">Tren Superior</span>
+                            <span class="duration">45 min</span>
+                        </div>
+                        <h4>Tracción & Espalda - Bíceps</h4>
+                        <p>Enfoque en dorsales, trapecio, romboides y flexores de codo.</p>
+                        <div class="card-details">
+                            <div class="detail-row"><span>Nivel de Intensidad:</span> <strong
+                                    class="text-orange">Media</strong></div>
+                            <div class="detail-row"><span>Ejercicios incluidos:</span> <strong>4</strong></div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn-primary-full">Ver Detalle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!--barra de abajo pie de paguina-->
+    <header class="top-navbars">
+        <div class="nav-pie-paguina">© 2026 Servicio Nacional de Aprendizaje SENA— Agrofit</div>
+    </header>
+</body>
+
+</html>

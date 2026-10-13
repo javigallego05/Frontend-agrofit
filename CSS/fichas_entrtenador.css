@@ -1,0 +1,199 @@
+/* =========================================
+   CONTENEDOR PRINCIPAL Y ENCABEZADO
+========================================= */
+.main-content {
+    padding: 25px 40px;
+    width: 100%;
+    background-color: #f2ffe8;
+    overflow-y: auto;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.header-text h1 {
+    margin: 0 0 5px 0;
+    font-size: 24px;
+    color: #1a1a1a;
+    font-weight: 900;
+}
+.header-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+.btn-primary {
+    background-color: #39a900;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background 0.2s;
+}
+.btn-primary:hover {
+    background-color: #2d8500;
+}
+
+
+/* =========================================
+   BARRA DE FILTROS
+========================================= */
+.filter-bar {
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+.search-input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 6px 12px;
+    width: 300px;
+    background: #fff;
+}
+.search-icon {
+    color: #888;
+    font-size: 14px;
+    margin-right: 8px;
+}
+.search-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 13px;
+}
+.select-jornada {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #333;
+    outline: none;
+    background: #fff;
+}
+
+
+/* =========================================
+   GRID DE FICHAS Y TARJETAS
+========================================= */
+.fichas-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.ficha-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+
+/* Cabecera de la tarjeta (Tags) */
+.ficha-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.tag-ficha {
+    color: #39a900;
+    font-weight: bold;
+    font-size: 11px;
+    border: 1px solid #39a900;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background: #fdfdfd;
+}
+.tag-jornada {
+    color: #666;
+    font-size: 11px;
+    background: #f0f0f0;
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
+
+/* Título e Info General */
+.ficha-title {
+    margin-bottom: 15px;
+}
+.ficha-title h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    color: #1a1a1a;
+}
+.sede-text {
+    margin: 0;
+    font-size: 12px;
+    color: #777;
+}
+
+
+/* Caja gris de Horario e Instructor */
+.ficha-info-box {
+    background: #f4f9f4;
+    border-radius: 6px;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.info-label {
+    color: #555;
+}
+.info-value {
+    color: #1a1a1a;
+    text-align: right;
+}
+.text-green {
+    color: #39a900 !important;
+}
+
+
+/* Barra de Progreso */
+.ficha-progress {
+    margin-top: auto;
+}
+.progress-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: #555;
+    margin-bottom: 6px;
+}
+.progress-stats {
+    color: #1a1a1a;
+}
+.progress-bar-bg {
+    background: #e0e0e0;
+    height: 6px;
+    border-radius: 3px;
+    width: 100%;
+    overflow: hidden;
+}
+.progress-bar-fill {
+    background: #39a900;
+    height: 100%;
+    border-radius: 3px;
+}

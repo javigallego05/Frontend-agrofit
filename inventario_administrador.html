@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGROFIT</title>
+    <link rel="stylesheet" href="CSS/inicio_sesion.css">
+    <link rel="stylesheet" href="CSS/inicio_admin.css">
+    <link rel="stylesheet" href="CSS/inventario_admin.css">
+
+</head>
+
+<body>
+    <!--barra superior-->
+    <header class="top-navbar">
+        <div class="nav-logo"> Agrofit <span class="badge">SENA</span></div>
+        <div class="nav-title">Sistema de Acondicionamiento Físico y Gimnasio</div>
+    </header>
+
+    <!--pestañas de inicio_principal-->
+    <div class="dashboard-layout">
+
+
+        <!--menu lateral de la izquierda-->
+        <aside class="sidebar">
+            <div class="user-card">
+                <img src="img/logo_sena 2.png" alt="SENA" class="logo-img">
+                <div class="user-info">
+                    <strong>Agrofit SENA</strong><br>
+                    <span>Portal Administrador</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="inicio_administrador.html" class="menu-item">
+                    <!-- Ícono Inicio -->
+                    Inicio & Control
+                </a>
+                <a href="usuarios_administrador.html" class="menu-item">
+                    <!-- Ícono Mis Rutinas -->
+                    Usuarios & Entrenadores
+                </a>
+                <a href="fichas_administrador.html" class="menu-item ">
+                    <!-- Ícono Progreso Físico -->
+                    Fichas SENA
+                </a>
+                <a href="#" class="menu-item menu-item-active">
+                    <!-- Ícono Progreso Físico -->
+                    Inventario de Máquinas
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="inicio_sesion.html" class="menu-item outline-btn">
+                    <!-- Ícono Cerrar Sesión -->
+                    Cerrar Sesión
+                </a>
+            </div>
+        </aside>
+
+        <!--panel principal de inventario maquinas administrador-->
+
+        <main class="main-content">
+            <div class="inventario-header">
+                <div class="inventario-title-container">
+                    <h1>Inventario y Mantenimiento de Máquinas</h1>
+                    <p>Inspección técnica de máquinas, pesas, accesorios y reporte de novedades.</p>
+                </div>
+                <button class="btn-nuevo">+ Registrar Nuevo Equipo</button>
+            </div>
+
+            <!--Tarjetas de Resumen-->
+            <div class="summary-cards">
+                <div class="summary-card">
+                    <span class="summary-label">Total Equipos</span>
+                    <strong class="summary-value">6</strong>
+                </div>
+                <div class="summary-card">
+                    <span class="summary-label">Operativos (100%)</span>
+                    <strong class="summary-value">4</strong>
+                </div>
+                <div class="summary-card">
+                    <span class="summary-label">En Mantenimiento</span>
+                    <strong class="summary-value">1</strong>
+                </div>
+                <div class="summary-card">
+                    <span class="summary-label">Fuera de Servicio</span>
+                    <strong class="summary-value">1</strong>
+                </div>
+            </div>
+
+            <!--Barra de búsqueda y filtros-->
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar por placa, nombre o marca...">
+                <select>
+                    <option>Todas las Categorías</option>
+                    <option>Cardio</option>
+                    <option>Peso Libre</option>
+                    <option>Máquinas de Fuerza</option>
+                </select>
+                <select>
+                    <option>Todos los Estados</option>
+                    <option>Operativo</option>
+                    <option>En Mantenimiento</option>
+                </select>
+            </div>
+
+            <!--Cuadrícula de Máquinas-->
+            <div class="equipment-grid">
+
+                <!--Máquina 1-->
+                <div class="equipment-card border-green">
+                    <div class="card-header">
+                        <span class="tag-placa">AG-EQ-001</span>
+                        <span class="tag-status status-green">Operativo</span>
+                    </div>
+
+                    <h3 class="equipment-title">Banco Plano Olímpico con Soporte</h3>
+                    <p class="equipment-brand">Marca: <strong>SportFitness Pro</strong> • Peso Libre</p>
+
+                    <div class="equipment-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Ubicación:</span>
+                            <strong class="detail-value">Zona Pesas Libres</strong>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Última Inspección:</span>
+                            <strong class="detail-value text-green">2026-08-01</strong>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Próximo Mantenimiento:</span>
+                            <strong class="detail-value text-green">2026-09-01</strong>
+                        </div>
+                    </div>
+
+                    <div class="equipment-notes">
+                        Tapizado en perfecto estado, pernos ajustados.
+                    </div>
+
+                    <div class="card-footer">
+                        <a href="#" class="report-link">Reportar Novedad</a>
+                    </div>
+                </div>
+
+                <!--Máquina 2-->
+                <div class="equipment-card border-green">
+                    <div class="card-header">
+                        <span class="tag-placa">AG-EQ-002</span>
+                        <span class="tag-status status-green">Operativo</span>
+                    </div>
+
+                    <h3 class="equipment-title">Caminadora Eléctrica Profesional T80</h3>
+                    <p class="equipment-brand">Marca: <strong>Matrix Fitness</strong> • Cardio</p>
+
+                    <div class="equipment-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Ubicación:</span>
+                            <strong class="detail-value">Zona Cardio A</strong>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Última Inspección:</span>
+                            <strong class="detail-value text-green">2026-08-10</strong>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Próximo Mantenimiento:</span>
+                            <strong class="detail-value text-green">2026-09-10</strong>
+                        </div>
+                    </div>
+
+                    <div class="equipment-notes">
+                        Banda lubricada, sensor cardíaco calibrado.
+                    </div>
+
+                    <div class="card-footer">
+                        <a href="#" class="report-link">Reportar Novedad</a>
+                    </div>
+                </div>
+
+                <!--Máquina 3-->
+                <div class="equipment-card">
+                    <div class="card-header">
+                        <span class="tag-placa">AG-EQ-003</span>
+                        <span class="tag-status">Mantenimiento</span>
+                    </div>
+
+                    <h3 class="equipment-title">Máquina Smith Multifuncional Guiada</h3>
+                    <p class="equipment-brand">Marca: <strong>LifeFitness</strong> • Máquinas de Fuerza</p>
+
+                    <div class="equipment-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Ubicación:</span>
+                            <strong class="detail-value">Zona Máquinas Guiadas</strong>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Última Inspección:</span>
+                            <strong class="detail-value text-green">2026-08-14</strong>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Próximo Mantenimiento:</span>
+                            <strong class="detail-value text-green">2026-08-22</strong>
+                        </div>
+                    </div>
+
+                    <div class="equipment-notes">
+                        Cambio preventivo de guaya y rodamientos en curso.
+                    </div>
+
+                    <div class="card-footer">
+                        <a href="#" class="report-link">Reportar Novedad</a>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+    <!--barra de abajo pie de paguina-->
+    <header class="top-navbars">
+        <div class="nav-pie-paguina">© 2026 Servicio Nacional de Aprendizaje SENA— Agrofit</div>
+    </header>
+</body>
+
+</html>

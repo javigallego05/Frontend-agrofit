@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGROFIT</title>
+    <link rel="stylesheet" href="CSS/inicio_sesion.css">
+    <link rel="stylesheet" href="CSS/inicio_admin.css">
+    <link rel="stylesheet" href="CSS/rutinas_aprendiz.css">
+
+</head>
+
+<body>
+    <!--barra superior-->
+    <header class="top-navbar">
+        <div class="nav-logo"> Agrofit <span class="badge">SENA</span></div>
+        <div class="nav-title">Sistema de Acondicionamiento Físico y Gimnasio</div>
+    </header>
+
+    <!--pestañas de inicio_principal-->
+    <div class="dashboard-layout">
+
+
+        <!--menu lateral de la izquierda-->
+        <aside class="sidebar">
+            <div class="user-card">
+                <img src="img/logo_sena 2.png" alt="SENA" class="logo-img">
+                <div class="user-info">
+                    <strong>Agrofit SENA</strong><br>
+                    <span>Portal Aprendiz</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="inicio_aprendiz.html" class="menu-item">
+                    <!-- Ícono Inicio -->
+                    Inicio
+                </a>
+                <a href="#" class="menu-item menu-item-active">
+                    <!-- Ícono Mis Rutinas -->
+                    Mis Rutinas
+                </a>
+                <a href="progreso_aprendiz.html" class="menu-item">
+                    <!-- Ícono Progreso Físico -->
+                    Progreso Fisico
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="inicio_sesion.html" class="menu-item outline-btn">
+                    <!-- Ícono Cerrar Sesión -->
+                    Cerrar Sesión
+                </a>
+            </div>
+        </aside>
+
+        <!--contenido principal rutinas aprendiz-->
+
+        <main class="main-content">
+            <div class="page-header">
+                <h1>Mi Rutina Asignada & Banco de Ejercicios</h1>
+                <p>Consulta la rutina prescrita por tu instructor, marca tus ejercicios completados y revisa la técnica.
+                </p>
+            </div>
+
+            <!--Sección: Rutina Activa Asignada-->
+            <div class="rutina-activa-card">
+                <div class="rutina-header-top">
+                    <div class="rutina-titles">
+                        <h2>Fuerza Pectoral</h2>
+                        <p>Enfoque en desarrollo de potencia, fuerza pectoral y estabilización de cintura escapular.</p>
+                    </div>
+
+                    <div class="assigned-by-box">
+                        <div class="assigned-info">
+                            <span class="label">ASIGNADA POR:</span>
+                            <strong>Carlos Andrés Gómez</strong>
+                            <span class="sub-label">Instructor Gimnasio CBA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Indicadores (KPIs)-->
+                <div class="rutina-stats">
+                    <div class="stat-box">
+                        <span class="stat-label">Duración</span>
+                        <span class="stat-value">45 min</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">Intencidad</span>
+                        <span class="stat-value text-green">Media</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">Ejercicios</span>
+                        <span class="stat-value">4 bloques</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">Estado de Sesión</span>
+                        <span class="stat-value text-green">2 / 4 listos</span>
+                    </div>
+                </div>
+
+                <!--Desglose de Ejercicios-->
+                <div class="ejercicios-section">
+                    <h3>Desglose de Ejercicios del Plan:</h3>
+
+                    <div class="ejercicios-grid">
+                        <!--Ejercicio 1 completado-->
+                        <div class="ejercicio-item completed">
+                            <div class="ejercicio-content">
+                                <span class="check-icon">✅</span>
+                                <div class="ej-details">
+                                    <strong>1. Press de banca plana</strong>
+                                    <small>4 series × 4x12 • Banco plano y barra olímpica</small>
+                                </div>
+                            </div>
+                            <span class="tag-gray">Pectoral</span>
+                        </div>
+
+                        <!--Ejercicio 2 completado-->
+                        <div class="ejercicio-item completed">
+                            <div class="ejercicio-content">
+                                <span class="check-icon">✅</span>
+                                <div class="ej-details">
+                                    <strong>2. Aperturas con mancuernas</strong>
+                                    <small>3 series × 3x15 • Mancuernas de 12kg / 14kg</small>
+                                </div>
+                            </div>
+                            <span class="tag-gray">Pectoral</span>
+                        </div>
+
+                        <!--Ejercicio 3 pendiente-->
+                        <div class="ejercicio-item">
+                            <div class="ejercicio-content">
+                                <span class="uncheck-icon"></span>
+                                <div class="ej-details">
+                                    <strong>3. Flexiones</strong>
+                                    <small>3 series × 3x al fallo • Colchoneta / Peso corporal</small>
+                                </div>
+                            </div>
+                            <span class="tag-gray">Pectoral</span>
+                        </div>
+
+                        <!--Ejercicio 4 pendiente-->
+                        <div class="ejercicio-item">
+                            <div class="ejercicio-content">
+                                <span class="uncheck-icon"></span>
+                                <div class="ej-details">
+                                    <strong>4. Fondos en paralelas (Dips)</strong>
+                                    <small>3 series × 3x10 • Barras paralelas</small>
+                                </div>
+                            </div>
+                            <span class="tag-gray">Pectoral</span>
+                        </div>
+                    </div>
+
+                    <button class="btn-play-large">▶ Abrir Modo de Entrenamiento Completo</button>
+                </div>
+            </div>
+
+            <!--Sección: Catálogo de Rutinas-->
+            <div class="catalogo-section">
+                <div class="catalogo-header">
+                    <div class="catalogo-titles">
+                        <h2>📚 Catálogo Oficial de Rutinas Institucionales</h2>
+                        <p>Planes validados por los instructores de acondicionamiento físico</p>
+                    </div>
+                    <div class="catalogo-filters">
+                        <button class="filter-btn active">Todas</button>
+                        <button class="filter-btn">Tren Superior</button>
+                        <button class="filter-btn">Tren Inferior</button>
+                        <button class="filter-btn">Cardio HIIT</button>
+                        <button class="filter-btn">Fuerza</button>
+                        <button class="filter-btn">Full Body</button>
+                    </div>
+                </div>
+
+                <div class="catalogo-grid">
+                    <!--Tarjeta 1 (Activa)-->
+                    <div class="catalogo-card card-active">
+                        <div class="card-head">
+                            <span class="tag-light">Tren Superior</span>
+                            <span class="time"> 45 min</span>
+                        </div>
+                        <h3>Fuerza Pectoral</h3>
+                        <p>Enfoque en desarrollo de potencia, fuerza pectoral y estabilización de cintura escapular.</p>
+
+                        <div class="card-stats">
+                            <div class="stat-row"><span>Nivel de Intensidad:</span> <strong
+                                    class="text-orange">Media</strong></div>
+                            <div class="stat-row"><span>Ejercicios incluidos:</span> <strong>4</strong></div>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="btn-card-primary">Ver Detalle</button>
+                        </div>
+                    </div>
+
+                    <!--Tarjeta 2-->
+                    <div class="catalogo-card">
+                        <div class="card-head">
+                            <span class="tag-light">Tren Inferior</span>
+                            <span class="time"> 50 min</span>
+                        </div>
+                        <h3>Potencia de Pierna y Glúteo</h3>
+                        <p>Trabajo integral de cuádriceps, isquiotibiales y pantorrillas.</p>
+
+                        <div class="card-stats">
+                            <div class="stat-row"><span>Nivel de Intensidad:</span> <strong
+                                    class="text-red">Alta</strong></div>
+                            <div class="stat-row"><span>Ejercicios incluidos:</span> <strong>4</strong></div>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="btn-card-primary">Ver Detalle</button>
+                        </div>
+                    </div>
+
+                    <!--Tarjeta 3-->
+                    <div class="catalogo-card">
+                        <div class="card-head">
+                            <span class="tag-light">Tren Superior</span>
+                            <span class="time"> 45 min</span>
+                        </div>
+                        <h3>Tracción & Espalda - Bíceps</h3>
+                        <p>Enfoque en dorsales, trapecio, romboides y flexores de codo.</p>
+
+                        <div class="card-stats">
+                            <div class="stat-row"><span>Nivel de Intensidad:</span> <strong
+                                    class="text-orange">Media</strong></div>
+                            <div class="stat-row"><span>Ejercicios incluidos:</span> <strong>4</strong></div>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="btn-card-primary">Ver Detalle</button>
+                        </div>
+                    </div>
+
+                    <!--Tarjeta 4-->
+                    <div class="catalogo-card">
+                        <div class="card-head">
+                            <span class="tag-light">Cardio HIIT</span>
+                            <span class="time"> 35 min</span>
+                        </div>
+                        <h3>Acondicionamiento Funcional & Core HIIT</h3>
+                        <p>Circuito metabólico para quema calórica y estabilización lumbo-pélvica.</p>
+
+                        <div class="card-stats">
+                            <div class="stat-row"><span>Nivel de Intensidad:</span> <strong
+                                    class="text-red">Alta</strong></div>
+                            <div class="stat-row"><span>Ejercicios incluidos:</span> <strong>4</strong></div>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="btn-card-primary">Ver Detalle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <!--barra de abajo pie de paguina-->
+    <header class="top-navbars">
+        <div class="nav-pie-paguina">© 2026 Servicio Nacional de Aprendizaje SENA— Agrofit</div>
+    </header>
+</body>
+
+</html>
